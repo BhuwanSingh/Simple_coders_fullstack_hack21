@@ -278,8 +278,9 @@
 
     <div class="login-div">
       <form
+        id="regform"
         action="/user/store"
-        mothod="POST"
+        method="post"
         class="login"
         onsubmit="return DisplayResults()"
         name="regform"
@@ -289,35 +290,19 @@
         <div id="errormessage"></div>
         <span class="seperator"></span>
         <div class="input-text">
-          <input
-            type="text"
-            name="name"
-            placeholder="Aadhar Card"
-            oninput="change()"
-          />
+          <input type="text" name="aadhar" placeholder="Aadhar Card" />
         </div>
         <div class="input-text">
-          <input
-            type="number"
-            name="email"
-            placeholder="Age"
-            oninput="change()"
-          />
+          <input type="number" name="age" placeholder="Age" />
         </div>
         <div class="input-text">
           <button class="btn_i" type="button" name="button">PWD</button>
           <input id="check" type="checkbox" name="pwd" value="pwd" />
         </div>
         <div class="input-text">
-          <input
-            id="city"
-            type="text"
-            name="city"
-            placeholder="City"
-            oninput="change()"
-          />
+          <input id="city" type="text" name="city" placeholder="City" />
         </div>
-        <input class="signin-button" type="submit" value="Sign Up" />
+        <input form="regform" class="signin-button" type="submit" value="Sign Up" />
         <div class="remember-flex">
           <div></div>
           <div class="help">

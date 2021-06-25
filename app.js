@@ -1,11 +1,23 @@
 //requiressss
 const express = require("express");
-const mongoose = require("mongoose");
+const app = new express();
+
+const ejs = require("ejs");
+app.set("view engine", "ejs");
+
+app.use(express.static("public"));
+
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const dotenv = require("dotenv");
 
 dotenv.config({ path: "./config.env" });
 
 //database
+
+const mongoose = require("mongoose");
 const DB = process.env.DATABASE.replace(
   "<PASSWORD>",
   process.env.DATABASE_PASSWORD
@@ -19,16 +31,6 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("DB Connection Successful!"));
-
-const app = new express();
-app.use(express.static("public"));
-
-const bodyParser = require("body-parser");
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-const ejs = require("ejs");
-app.set("view engine", "ejs");
 
 const mainController = require("./controllers/mainPage");
 app.get("/", mainController);
