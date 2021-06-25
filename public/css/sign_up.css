@@ -3,17 +3,19 @@ body {
   padding: 0;
 }
 .back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
-    url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   height: 100vh;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 .logo {
+  margin-left: 10px;
   border-radius: 50%;
+  height: 100px;
   padding: 25px;
-  width: 100px;
+  width: 110px;
 }
 .flex-parent {
   display: flex;
@@ -32,7 +34,7 @@ body {
 #para {
   padding-left: 10px;
   padding-top: 0px;
-  color: #f6e6cb;
+  color: #0A1931;
 }
 #btn1 {
   margin-top: 200px;
@@ -45,7 +47,7 @@ body {
 h1 {
   margin: auto;
   width: max-content;
-  color: black;
+  color: #0A1931;
 }
 span {
   display: inline-block;
@@ -96,9 +98,9 @@ input[type='submit']:hover {
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
-    url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
-  height: 110vh;
+  background-image:
+    url("https://images.unsplash.com/photo-1576074255432-27016e8fa7d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5qZWN0aW9ufGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -122,10 +124,12 @@ body {
   border-radius: 5px;
   padding: 30px 70px 143px 70px;
   backdrop-filter:blur(5px);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .login h1 {
-  color: white;
+  color: #0A1931;
   padding-bottom: 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .remember-flex {
   display: flex;
@@ -167,9 +171,11 @@ body {
 }
 .help a {
   text-decoration: none;
+  color: #0A81AB;
 }
 .help a:hover {
   text-decoration: underline;
+  color: #2940D3;
 }
 .input-text {
   margin-bottom: 20px;
@@ -177,7 +183,7 @@ body {
 .input-text input {
   width: 100%;
   height: 45px;
-  background-color: #202020;
+  background-color: #0A1931;
   color: white;
   border-radius: 5px;
   border: none;
@@ -197,7 +203,7 @@ body {
   margin-top: 20px;
   padding: 13px;
   border-radius: 5px;
-  background-color: red;
+  background-color: #0A81AB;
   color: white;
   border: none;
   font-weight: bold;
@@ -221,9 +227,10 @@ body {
 .btn_i {
   width: 60%;
   height: 50px;
-  background-color: #202020;
+  background-color: #0A1931;
   border-radius: 5px;
   border: none;
+  text-align: left;
   outline: transparent;
   text-indent: 18px;
   font-size: 1rem;
