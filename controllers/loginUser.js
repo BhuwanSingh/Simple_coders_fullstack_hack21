@@ -8,7 +8,7 @@ module.exports = (req, res) => {
       if (user.secret_code == secret_code) {
         req.session.userID = user._id;
         console.log("User logged in:", aadhar);
-        res.redirect("/registration");
+        res.redirect("/user/profile");
       }
     } else {
       redirect("/login");

@@ -39,8 +39,8 @@ app.use(
 
 global.loggedIn = null;
 app.use("*", (req, res, next) => {
-    loggedIn = req.session.userId;
-    next();
+  loggedIn = req.session.userId;
+  next();
 });
 
 const mainController = require("./controllers/mainPage");
@@ -52,14 +52,18 @@ app.get("/login", loginController);
 const verifier = require("./controllers/loginUser");
 app.post("/users/login", verifier);
 
+const validmiddleware = require("./middleware/validmiddleware");
+const userProfilePage = require("./controllers/userProfile");
+app.get("/user/profile", validmiddleware , userProfilePage);
+
 const worker_login = require("./controllers/adminLoginController");
 app.get("/worker_login", worker_login);
 
 const adminVerifier = require("./controllers/adminLoginVerify");
-app.post("/admin_store/login" , adminVerifier)
+app.post("/admin_store/login", adminVerifier);
 
-const adminPage = require("./controllers/adminPage")
-app.get("/adminPage/verified" , adminPage)
+const adminPage = require("./controllers/adminPage");
+app.get("/adminPage/verified", adminPage);
 
 const registerController = require("./controllers/sign_upPage.js");
 app.get("/sign_up", registerController);
@@ -71,6 +75,7 @@ const registration = require("./controllers/registration");
 app.get("/registration", registration);
 
 const van_system = require("./controllers/van_system");
+
 app.get("/van_system", van_system);
 
 app.use((req, res) => res.render("notfound"));
