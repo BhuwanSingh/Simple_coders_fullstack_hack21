@@ -1,3 +1,60 @@
-body{
-    background-color: blueviolet;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
+        url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
+    height: 110vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo {
+    border-radius: 50%;
+    padding: 25px;
+    width: 75px;
+}
+.flex-parent {
+    display: flex;
+}
+.jc-center {
+    justify-content: center;
+}
+#heading {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+#para {
+    padding-left: 10px;
+    padding-top: 0px;
+    color: #f6e6cb;
+}
+#btn1 {
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+#btn2 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+a:link,
+a:visited {
+    font-size: 30px;
+    background-color: #f6e6cb;
+    color: black;
+    padding: 20px 25px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+a:hover,
+a:active {
+    background-color: #e7d4b5;
 }
