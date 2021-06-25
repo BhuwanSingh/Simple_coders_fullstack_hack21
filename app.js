@@ -23,6 +23,7 @@ mongoose
 const app = new express();
 app.use(express.static("public"));
 
+const bodyParser = require("body-parser");
 const ejs = require("ejs");
 app.set("view engine", "ejs");
 
