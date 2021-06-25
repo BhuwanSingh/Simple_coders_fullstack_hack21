@@ -45,6 +45,9 @@ app.get("/sign_up", registerController);
 const useradder = require("./controllers/newUser");
 app.post("/user/store", useradder);
 
+const registration = require("./controllers/registration");
+app.get("/registration", registration);
+
 app.use((req, res) => res.render("notfound"));
 
 app.listen(process.env.PORT || 3000, () => {
