@@ -24,11 +24,17 @@ const app = new express();
 app.use(express.static("public"));
 
 const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const ejs = require("ejs");
 app.set("view engine", "ejs");
 
 const mainController = require("./controllers/mainPage");
 app.get("/", mainController);
+
+const loginController = require("./controllers/loginPage");
+app.get("/login", loginController);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("server Running");
