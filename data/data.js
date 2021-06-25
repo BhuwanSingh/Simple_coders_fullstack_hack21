@@ -20,11 +20,13 @@ mongoose
 
 const centres = JSON.parse(fs.readFileSync(`${__dirname}/centers.json`, 'utf8'))
 
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf8'))
+
 const inData = async () => {
   try {
     if (process.argv[3] === '--c') {
       await Center.create(centres)
-    } else if (process.argv[3] === 'u') {
+    } else if (process.argv[3] === '--u') {
       await User.create(users)
     }
     console.log('Data Loaded in DB')
