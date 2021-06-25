@@ -4,8 +4,8 @@ body {
 }
 .back {
   background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
-    url('https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=');
-  height: 110vh;
+    url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
+  height: 100vh;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -24,7 +24,7 @@ body {
 #heading {
   margin-top: 10px;
   margin-bottom: 30px;
-  color: white;
+  color: black;
   font-size: 50px;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@ body {
 h1 {
   margin: auto;
   width: max-content;
-  color: white;
+  color: black;
 }
 span {
   display: inline-block;
@@ -69,7 +69,7 @@ span {
 }
 label {
   font-weight: bold;
-  color: white;
+  color: black;
   font-size: 1.25em;
 }
 input {
@@ -83,19 +83,22 @@ input[type='submit'] {
   width: 260px;
   background-color: red;
   font-weight: bold;
+  color: white;
 }
 input[type='submit']:hover {
   cursor: pointer;
   height: 51px;
-  border: 2px gray solid;
+  border: 2px grey solid;
   background-color: red;
   transform: scale(0.95);
+  color: #121212;
 }
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url('/images/img4.jpg') no-repeat center center fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
+    url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
+  height: 110vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -115,9 +118,10 @@ body {
 .login {
   margin: 0 auto;
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color:#FFFFFF30;
   border-radius: 5px;
   padding: 30px 70px 143px 70px;
+  backdrop-filter:blur(5px);
 }
 .login h1 {
   color: white;
@@ -173,7 +177,7 @@ body {
 .input-text input {
   width: 100%;
   height: 45px;
-  background-color: #333;
+  background-color: #202020;
   color: white;
   border-radius: 5px;
   border: none;
@@ -217,7 +221,7 @@ body {
 .btn_i {
   width: 60%;
   height: 50px;
-  background-color: #333;
+  background-color: #202020;
   border-radius: 5px;
   border: none;
   outline: transparent;

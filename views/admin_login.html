@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Button Hover effects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #111;
+}
+
+.btn {
+  position: relative;
+  padding: 20px 40px;
+  border: 2px solid #1014f3;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #10ebf3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  width: 164px;
+  height: 70px;
+}
+
+.btn:hover {
+  color: #111;
+}
+
+.btn span {
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #0af098;
+  transition: width 0.5s, height 0.5s;
+  z-index: -1;
+}
+
+.btn:hover span {
+  width: 400px;
+  height: 300px;
+}
+.logo {
+  position: fixed;
+  top:2%;
+  left: 5%;
+}
+h1{
+  color: white;
+}
+#para{
+  color: white;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  right: 50%;
+ width: 100%;
+ font-size: 300%;
+}
+
+
+
+  </style>
+  <body>
+    <div class="back">
+        <nav>
+            <img
+                class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl177Zkur-D_jfpWrDLn9vyk90O4VHCoU1iQ&usqp=CAU"
+                alt=""
+            />
+            <p id="para">Vaccine on the go</p>
+        </nav>
+
+    <h1 class="heading"> welcome back</h1><br><br>
+
+   <a href="#" class="btn"><span></span>login</a>
+   <br>
+   <br>
+
+   <a href="#" class="btn"><span></span>sign up</a>
+
+  </body>
+</html>
