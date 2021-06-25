@@ -41,6 +41,7 @@ body {
   padding-left: 100px;
   margin-top: 200px;
   margin-bottom: 0px;
+  padding-bottom: 30px;
   height: 30px;
   border-radius: 10px;
 
@@ -50,6 +51,7 @@ body {
   width: 300px;
   margin-top: 30px;
   padding-left: 80px;
+  padding-bottom: 30px;
   margin-bottom: 0px;
   height: 30px;
   border-radius: 15px;
