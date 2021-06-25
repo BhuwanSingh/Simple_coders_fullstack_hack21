@@ -6,7 +6,7 @@ module.exports = (req, res) => {
     console.log(secret_code);
     if (admin) {
       if (admin.secret_code == secret_code) {
-        req.session.userID = admin._id;
+        // req.session.userID = admin._id;
         console.log("admin logged in:", aadhar);
         res.redirect("/adminPage/verified");
       }

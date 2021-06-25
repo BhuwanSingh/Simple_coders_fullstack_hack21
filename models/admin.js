@@ -12,6 +12,6 @@ const worker = new Schema({
   },
 })
 
-const admin = mongoose.model('User', worker)
+const admin = mongoose.model('admin', worker)
 
 module.exports = admin

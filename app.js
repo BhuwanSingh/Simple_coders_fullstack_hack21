@@ -52,8 +52,8 @@ app.get("/login", loginController);
 const verifier = require("./controllers/loginUser");
 app.post("/users/login", verifier);
 
-const admin_login = require("./controllers/adminLoginController");
-app.get("/admin_login", admin_login);
+const worker_login = require("./controllers/adminLoginController");
+app.get("/worker_login", worker_login);
 
 const adminVerifier = require("./controllers/adminLoginVerify");
 app.post("/admin_store/login" , adminVerifier)

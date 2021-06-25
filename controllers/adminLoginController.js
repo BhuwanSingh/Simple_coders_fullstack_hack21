@@ -1,3 +1,3 @@
-module.exports = (req, res)=> {
-    res.render("admin_login")
-}
+module.exports = (req, res) => {
+  res.render("admin_login");
+};
