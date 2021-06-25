@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.render("sign_up");
-};
+  res.render('sign_up')
+}

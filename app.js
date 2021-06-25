@@ -48,6 +48,9 @@ app.post("/user/store", useradder);
 const registration = require("./controllers/registration");
 app.get("/registration", registration);
 
+const van_system = require("./controllers/van_system");
+app.get("/van_system", van_system);
+
 app.use((req, res) => res.render("notfound"));
 
 app.listen(process.env.PORT || 3000, () => {
