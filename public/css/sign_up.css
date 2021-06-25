@@ -3,7 +3,7 @@ body {
     padding: 0;
   }
   .back {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
+    background-image: linear-gradient( rgba(0, 0, 0, 0.001), black),
       url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
     height: 110vh;
     background-position: center;
