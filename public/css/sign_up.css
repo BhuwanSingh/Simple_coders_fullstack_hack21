@@ -3,8 +3,8 @@ body {
   padding: 0;
 }
 .back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -34,7 +34,7 @@ body {
 #para {
   padding-left: 10px;
   padding-top: 0px;
-  color: #0A1931;
+  color: #0a1931;
 }
 #btn1 {
   margin-top: 200px;
@@ -47,7 +47,7 @@ body {
 h1 {
   margin: auto;
   width: max-content;
-  color: #0A1931;
+  color: #0a1931;
 }
 span {
   display: inline-block;
@@ -82,24 +82,37 @@ input {
   outline: none;
 }
 input[type='submit'] {
+  cursor: pointer;
   width: 260px;
-  background-color: red;
+  background: linear-gradient(0deg, #0a81ab 0%, #5ac1fb 100%);
   font-weight: bold;
   color: white;
+  transition: all 0.3s ease-out;
+  border: none;
+  box-shadow: -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    4px 4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+input[type='submit']:before {
+  height: 0%;
+  width: 2px;
 }
 input[type='submit']:hover {
-  cursor: pointer;
   height: 51px;
-  border: 2px grey solid;
-  background-color: red;
+  /* border: 2px grey solid; */
+  background: #fff;
   transform: scale(0.95);
   color: #121212;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 body {
   margin: 0;
   padding: 0;
-  background-image:
-    url("https://images.unsplash.com/photo-1576074255432-27016e8fa7d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5qZWN0aW9ufGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-image: url('https://images.unsplash.com/photo-1576074255432-27016e8fa7d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5qZWN0aW9ufGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
   height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -120,14 +133,14 @@ body {
 .login {
   margin: 0 auto;
   width: 400px;
-  background-color:#FFFFFF30;
+  background-color: #ffffff30;
   border-radius: 5px;
   padding: 30px 70px 143px 70px;
-  backdrop-filter:blur(5px);
+  backdrop-filter: blur(5px);
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .login h1 {
-  color: #0A1931;
+  color: #0a1931;
   padding-bottom: 10px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -171,11 +184,11 @@ body {
 }
 .help a {
   text-decoration: none;
-  color: #0A81AB;
+  color: #0a81ab;
 }
 .help a:hover {
   text-decoration: underline;
-  color: #2940D3;
+  color: #2940d3;
 }
 .input-text {
   margin-bottom: 20px;
@@ -183,7 +196,7 @@ body {
 .input-text input {
   width: 100%;
   height: 45px;
-  background-color: #0A1931;
+  background-color: #0a1931;
   color: white;
   border-radius: 5px;
   border: none;
@@ -203,7 +216,7 @@ body {
   margin-top: 20px;
   padding: 13px;
   border-radius: 5px;
-  background-color: #0A81AB;
+  background-color: #0a81ab;
   color: white;
   border: none;
   font-weight: bold;
@@ -227,7 +240,7 @@ body {
 .btn_i {
   width: 60%;
   height: 50px;
-  background-color: #0A1931;
+  background-color: #0a1931;
   border-radius: 5px;
   border: none;
   text-align: left;
