@@ -36,6 +36,12 @@ app.get("/", mainController);
 const loginController = require("./controllers/loginPage");
 app.get("/login", loginController);
 
+const verifier = require("./controllers/loginUser")
+app.post("/users/login" , verifier);
+
+const registerController = require("./controllers/register.js");
+app.get("/sign_up", registerController);
+
 app.use((req, res) => res.render("notfound"));
 
 app.listen(process.env.PORT || 3000, () => {
