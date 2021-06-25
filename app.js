@@ -73,8 +73,8 @@ app.post("/user/store", useradder);
 
 // const registration = require("./controllers/registration");
 const Center = require("./models/center");
-app.get("/registration", (req, res) => {
-  const center = Center.find({});
+app.get("/registration", async (req, res) => {
+  const center = await Center.find({});
   console.log(center);
   res.render("registration", center);
 });

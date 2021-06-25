@@ -18,17 +18,25 @@
         <button class=" search-btn" type="button"> search by pin</button>
       
         <table id="myTable">
+            <!-- <% JSON.stringify(center)%> -->
+            <% console.log(center) %>
+            <% for(var i = 0 ; i < center.length ; i++){ %>
             <tr class="header2">
               <th style="width:60%;">LOCATION</th>
               <th style="width:40%;">PIN CODE </th>
               <th style="width:40%;"> DATE  </th>
             </tr>
             <tr>
-              <td>CHIRAYU MEDICAL COLLEGE 18</td>
-              <td>462030</td>
-              <TD>26/06/2021</TD>
+              <td><%= center[i].name %></td>
+              <td><%= center[i].pin %></td>
+              <td><%= center[i].slots %></td>
+              <td><%= center[i].address %></td>
+              <td><%= center[i].paid_free %></td>
+              <td><%= center[i].age %></td>
+              <td><%= center[i].vaccine %></td>
             </tr>
-            <tr>
+            <% } %>
+            <!-- <tr>
                 <td>HAJELA HOSPITAL</td>
                 <td>462003</td>
                 <TD>28/06/2021</TD>
@@ -42,7 +50,7 @@
                 <td>ONCOLOGY BLOCK AIIMS COVI</td>
                 <td>462020</td>
                 <TD>30/06/2021</TD>
-            </tr>
+            </tr> -->
           </table>
 
              </div>
