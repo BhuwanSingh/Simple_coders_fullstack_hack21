@@ -6,6 +6,6 @@ const ejs = require("ejs");
 app.set("view engine" , "ejs");
 
 
-app.listen( 3000 || port.env.PORT , ()=>{
+app.listen( process.env.PORT || 3000, ()=>{
     console.log("server Running");
 })
