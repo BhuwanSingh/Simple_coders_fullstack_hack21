@@ -10,17 +10,17 @@ const secretCode = async (length) => {
 }
 
 module.exports = async (req, res) => {
-  const newUser = { ...req.body }
-  const code = await secretCode(5)
-  newUser.age = parseInt(newUser.age)
-  
-  newUser.secret_code = code
-  console.log(newUser)
-  arr = [newUser]
-  console.log(arr)
   try {
-    const newCreated = await User.create(arr)
+    const newCreated = await User.create({
+      aadhar: req.body.aadhar,
+      age: parseInt(req.body.age),
+      pwd: req.body.pwd ? true : false,
+      secret_code: await secretCode(5),
+      city: req.body.city,
+    })
     console.log(newCreated)
+    if(req.body.pwd || parseInt(req.body.age)>=70)
+    res.redirect('/van_system')
     res.redirect('/registration')
   } catch (err) {
     console.log(err)
