@@ -54,7 +54,7 @@ app.post("/users/login", verifier);
 
 const validmiddleware = require("./middleware/validmiddleware");
 const userProfilePage = require("./controllers/userProfile");
-app.get("/user/profile", validmiddleware , userProfilePage);
+app.get("/user/profile", validmiddleware, userProfilePage);
 
 const worker_login = require("./controllers/adminLoginController");
 app.get("/worker_login", worker_login);

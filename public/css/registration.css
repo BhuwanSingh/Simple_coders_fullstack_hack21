@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-family: sans-serif;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 70px;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.search-by-pincode {
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  width: 200px;
+}
+.search-btn {
+  height: 50px;
+  width: 150px;
+  background: #ffeb4b;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+}
+.search-btn:hover {
+  background: #ffc110;
+  cursor: pointer;
+}
+.form-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+.submit-btn {
+  height: 50px;
+  width: 150px;
+  background: #ffeb4b;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+  align-items: center;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  z-index: 1;
+  top: o;
+  overflow-x: hidden;
+  left: 0;
+}
+
+#myTable th,
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+.skip-btn {
+  height: 50px;
+  width: 400px;
+  background: #ffeb4b;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+}
+.submit-btn:hover {
+  background: #ffc110;
+  cursor: pointer;
+}
+
+.skip-btn:hover {
+  background: #ffc110;
+  cursor: pointer;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
