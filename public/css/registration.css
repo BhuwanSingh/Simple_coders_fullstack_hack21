@@ -54,7 +54,8 @@ h1 {
 }
 #myTable {
   border-collapse: collapse;
-  width: 100%;
+  height: 80%;
+  width: 40%;
   border: 1px solid #ddd;
   font-size: 18px;
   z-index: 1;
@@ -106,25 +107,6 @@ h1 {
   background: #ffc110;
   cursor: pointer;
 }
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-  left: 0;
-  background-color: #fff;
-}
-
-.right {
-  right: 0;
-  background-color: red;
-}
 
 .centered {
   position: absolute;
@@ -137,4 +119,9 @@ h1 {
 .centered img {
   width: 150px;
   border-radius: 50%;
+}
+#map {
+  position: fixed;
+  left: 30%;
+  top: 50%;
 }
