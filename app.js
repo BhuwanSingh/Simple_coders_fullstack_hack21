@@ -36,11 +36,14 @@ app.get("/", mainController);
 const loginController = require("./controllers/loginPage");
 app.get("/login", loginController);
 
-const verifier = require("./controllers/loginUser")
-app.post("/users/login" , verifier);
+const verifier = require("./controllers/loginUser");
+app.post("/users/login", verifier);
 
-const registerController = require("./controllers/register.js");
+const registerController = require("./controllers/sign_upPage.js");
 app.get("/sign_up", registerController);
+
+const useradder = require("./controllers/newUser");
+app.post("/user/store", useradder);
 
 app.use((req, res) => res.render("notfound"));
 
