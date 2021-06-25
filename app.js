@@ -15,8 +15,6 @@ const dotenv = require("dotenv");
 
 dotenv.config({ path: "./config.env" });
 
-//database
-
 const mongoose = require("mongoose");
 const DB = process.env.DATABASE.replace(
   "<PASSWORD>",
@@ -51,11 +49,17 @@ app.get("/", mainController);
 const loginController = require("./controllers/loginPage");
 app.get("/login", loginController);
 
+const verifier = require("./controllers/loginUser");
+app.post("/users/login", verifier);
+
 const admin_login = require("./controllers/adminLoginController");
 app.get("/admin_login", admin_login);
 
-const verifier = require("./controllers/loginUser");
-app.post("/users/login", verifier);
+const adminVerifier = require("/controllers/adminLoginVerify");
+app.post("/admin_store/login" , adminVerifier)
+
+const adminPage = require("controllers/adminPage")
+app.get("/adminPage/verified" , adminPage)
 
 const registerController = require("./controllers/sign_upPage.js");
 app.get("/sign_up", registerController);
