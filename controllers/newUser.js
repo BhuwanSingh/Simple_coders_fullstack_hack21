@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const User = require('../models/User')
 
 module.exports = (req, res) => {
   User.create(
@@ -7,12 +7,14 @@ module.exports = (req, res) => {
       if (error) {
         const vaidationErrors = Object.keys(error.errors).map(
           (key) => errors.error[key].message
-        );
-        req.flash("validationErrors", validationErrors);
-        // req.flash("data" , req.body )
-        return res.redirect("/sign_up");
+        )
+        req.flash('data', req.body)
+        return res.redirect('/sign_up')
       }
-      res.redirect("/");
+      if (req.body.age >= 70) {
+        return res.redirect('/van_system')
+      }
+      res.redirect('/registration')
     }
-  );
-};
+  )
+}
