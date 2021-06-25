@@ -2,17 +2,17 @@ const User = require("../models/User");
 module.exports = (req, res) => {
   const { aadhar, secret_code } = req.body;
   User.findOne({ aadhar }, (error, user) => {
+    console.log(user.secret_code);
+    console.log(secret_code);
     if (user) {
-      if (user.secret_code === secret_code) {
-        //TO ADD SESSION VARIABLES
-        // req.sessions.userId = user._id;
+      if (user.secret_code == secret_code) {
+        req.session.userID = user._id;
         console.log("User logged in:", aadhar);
-        // page for redirection to be redirected to be after get request.
-        res.redirect("/");
-      } else {
-        res.redirect("/login");
+        res.redirect("/registration");
       }
     } else {
+      redirect("/login");
     }
+    console.log(error);
   });
 };

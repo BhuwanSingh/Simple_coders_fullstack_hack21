@@ -32,6 +32,19 @@ mongoose
   })
   .then(() => console.log("DB Connection Successful!"));
 
+const expressSession = require("express-session");
+app.use(
+  expressSession({
+    secret: "keyboard cat",
+  })
+);
+
+global.loggedIn = null;
+app.use("*", (req, res, next) => {
+    loggedIn = req.session.userId;
+    next();
+});
+
 const mainController = require("./controllers/mainPage");
 app.get("/", mainController);
 
