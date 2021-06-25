@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sign In</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/user_login.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl177Zkur-D_jfpWrDLn9vyk90O4VHCoU1iQ&usqp=CAU"
+        alt=""
+      />
+      <p id="para">Vaccine on the go</p>
+      <a id="btn1" href="/login">Login to get vaccine</a>
+    </nav>
+
+    <div class="login-div">
+      <form
+        action="/users/login"
+        method="POST"
+        class="login"
+        onsubmit="return DisplayResults()"
+        name="regform"
+        autocomplete="off"
+      >
+        <h1 class="sign">Sign In</h1>
+        <div id="errormessage"></div>
+        <span class="seperator"></span>
+        <span class="seperator"></span>
+
+        <div class="input-text">
+          <input
+            type="text"
+            name="aadhar"
+            placeholder="Health Worker ID"
+            oninput="change()"
+          />
+          <span class="seperator"></span>
+        </div>
+        <div class="input-text">
+          <input
+            id="pass_signup"
+            type="password"
+            name="secret_code"
+            placeholder="Secret Code"
+            oninput="change()"
+          />
+        </div>
+
+        <span class="seperator"></span>
+        <span class="seperator"></span>
+        <span class="seperator"></span>
+
+        <input class="signin-button" type="submit" value="Sign In" />
+        <div class="remember-flex">
+          <div></div>
+          <div class="help">
+            <a class="color_text" href="mailto:someone@example.com"
+              >Need help?</a
+            >
+          </div>
+        </div>
+        <div class="login-face"></div>
+        <br />
+        <div class="new-members">
+          <!-- Not yet registered? -->
+          This page is for the health workers only. Click on "Login to get vaccine" to get to your page.
+          <!-- <a href="/sign_up" class="signup-link">Sign up now</a>. -->
+        </div>
+        <br />
+      </form>
+
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
+
+<!-- <html>
+  <head>
+    <title>Button Hover effects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #111;
+}
+
+.btn {
+  position: relative;
+  padding: 20px 40px;
+  border: 2px solid #1014f3;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #10ebf3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  width: 164px;
+  height: 70px;
+}
+
+.btn:hover {
+  color: #111;
+}
+
+.btn span {
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #0af098;
+  transition: width 0.5s, height 0.5s;
+  z-index: -1;
+}
+
+.btn:hover span {
+  width: 400px;
+  height: 300px;
+}
+.logo {
+  position: fixed;
+  top:2%;
+  left: 5%;
+}
+h1{
+  color: white;
+}
+#para{
+  color: white;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  right: 50%;
+ width: 100%;
+ font-size: 300%;
+}
+
+
+
+  </style>
+  <body>
+    <div class="back">
+        <nav>
+            <img
+                class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl177Zkur-D_jfpWrDLn9vyk90O4VHCoU1iQ&usqp=CAU"
+                alt=""
+            />
+            <p id="para">Vaccine on the go</p>
+        </nav>
+
+    <h1 class="heading"> welcome back</h1><br><br>
+
+   <a href="#" class="btn"><span></span>login</a>
+   <br>
+   <br>
+
+   <a href="#" class="btn"><span></span>sign up</a>
+
+  </body>
+</html> -->
