@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const person = new Schema({
   aadhar: {
@@ -16,8 +16,13 @@ const person = new Schema({
   secret_code: {
     type: String,
   },
-});
+  dose: {
+    type: Number,
+    enum: [0, 1, 2],
+    default: 0,
+  },
+})
 
-const User = mongoose.model("User", person);
+const User = mongoose.model('User', person)
 
-module.exports = User;
+module.exports = User
