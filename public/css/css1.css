@@ -4,8 +4,8 @@ body {
 }
 
 .back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
-    url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -13,6 +13,7 @@ body {
 }
 .logo {
   border-radius: 50%;
+  height: 60px;
   padding: 25px;
   width: 75px;
 }
@@ -23,19 +24,21 @@ body {
   justify-content: center;
 }
 #heading {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  color: white;
-  font-size: 50px;
+  margin-top: 2px;
+  margin-bottom: 23px;
+  color: #0A1931;
+  font-size: 60px;
   display: flex;
   justify-content: center;
 }
 #para {
   padding-left: 10px;
-  padding-top: 0px;
-  color: #f6e6cb;
+  margin-top: 0px;
+  color: #0C4271;
 }
 #btn1 {
+  width: 150px;
+  padding-left: 100px;
   margin-top: 200px;
   margin-bottom: 0px;
   height: 30px;
@@ -44,7 +47,9 @@ body {
 
 }
 #btn2 {
+  width: 300px;
   margin-top: 30px;
+  padding-left: 80px;
   margin-bottom: 0px;
   height: 30px;
   border-radius: 15px;
@@ -55,9 +60,9 @@ a:link,
 a:visited {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px;
-  background-color: red;
-  color: white;
-  padding: 20px 25px 20px;
+  background-color: #0C4271;
+  color: #F9DFDC;
+  padding: 25px 25px 25px;
   text-decoration: none;
   border-radius: 25px;
   display: inline-block;
@@ -68,9 +73,9 @@ a:visited {
 
 a:hover,
 a:active {
-  background-color: black;
+  background-color: #F9DFDC;
   border: 2px grey solid;
-  color: red;
+  color: #0C4271;
 
 
 }
