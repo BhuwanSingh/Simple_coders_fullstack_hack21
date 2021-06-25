@@ -36,6 +36,8 @@ app.get("/", mainController);
 const loginController = require("./controllers/loginPage");
 app.get("/login", loginController);
 
+app.use((req, res) => res.render("notfound"));
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("server Running");
 });
