@@ -4,8 +4,8 @@ body {
 }
 
 .back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -26,7 +26,7 @@ body {
 #heading {
   margin-top: 2px;
   margin-bottom: 23px;
-  color: #0A1931;
+  color: #0a1931;
   font-size: 60px;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ body {
 #para {
   padding-left: 10px;
   margin-top: 0px;
-  color: #0C4271;
+  color: #0c4271;
 }
 #btn1 {
   width: 150px;
@@ -44,8 +44,6 @@ body {
   padding-bottom: 30px;
   height: 30px;
   border-radius: 10px;
-
-
 }
 #btn2 {
   width: 300px;
@@ -55,29 +53,26 @@ body {
   margin-bottom: 0px;
   height: 30px;
   border-radius: 15px;
-
-
+}
+a {
+  transition: all 0.5s ease-out;
 }
 a:link,
 a:visited {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px;
-  background-color: #0C4271;
-  color: #F9DFDC;
+  background-color: #0c4271;
+  color: #f9dfdc;
   padding: 25px 25px 25px;
   text-decoration: none;
   border-radius: 25px;
   display: inline-block;
   transform: scale(0.95);
-
-
 }
 
 a:hover,
 a:active {
-  background-color: #F9DFDC;
+  background-color: #f9dfdc;
   border: 2px grey solid;
-  color: #0C4271;
-
-
+  color: #0c4271;
 }
