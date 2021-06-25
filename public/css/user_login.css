@@ -98,7 +98,7 @@ body{
   body {
     margin: 0;
     padding: 0;
-    background: linear-gradient( rgba(0, 0, 0, 0.006), rgba(0, 0, 0, 0.5) ),url("/images/img2.jpg") no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.006), rgba(0, 0, 0, 0.5) ),url("/images/corona.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
