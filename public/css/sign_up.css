@@ -89,8 +89,7 @@ input[type='submit'] {
   color: white;
   transition: all 0.3s ease-out;
   border: none;
-  box-shadow: -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
-    4px 4px 6px 0 rgba(116, 125, 136, 0.5),
+  box-shadow: -4px -4px 6px 0 #ffffff7f, 4px 4px 6px 0 rgba(116, 125, 136, 0.5),
     inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
     inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
 }
