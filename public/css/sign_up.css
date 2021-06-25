@@ -87,15 +87,27 @@ input[type='submit'] {
   background: linear-gradient(0deg, #0a81ab 0%, #5ac1fb 100%);
   font-weight: bold;
   color: white;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   border: none;
+  box-shadow: -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    4px 4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+input[type='submit']:before {
+  height: 0%;
+  width: 2px;
 }
 input[type='submit']:hover {
   height: 51px;
-  border: 2px grey solid;
+  /* border: 2px grey solid; */
   background: #fff;
   transform: scale(0.95);
   color: #121212;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 body {
   margin: 0;
