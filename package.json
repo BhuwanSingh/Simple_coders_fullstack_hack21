@@ -1,0 +1,23 @@
+{
+  "name": "simple_coders_fullstack_hack21",
+  "version": "1.0.0",
+  "description": "for Hackathon 2k21 by team Simple_coders",
+  "main": "app.js",
+  "scripts": {
+    "start" : "nodemon "
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhuwanSingh/Simple_coders_fullstack_hack21.git"
+  },
+  "author": "Bhuwan , Pratyush, Mayank, Isha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BhuwanSingh/Simple_coders_fullstack_hack21/issues"
+  },
+  "homepage": "https://github.com/BhuwanSingh/Simple_coders_fullstack_hack21#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
