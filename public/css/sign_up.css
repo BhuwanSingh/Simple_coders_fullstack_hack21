@@ -1,239 +1,240 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  .back {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.001), black),
-      url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
-    height: 110vh;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
-  .logo {
-    border-radius: 50%;
-    padding: 25px;
-    width: 100px;
-  }
-  .flex-parent {
-    display: flex;
-  }
-  .jc-center {
-    justify-content: center;
-  }
-  #heading {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-  }
-  #para {
-    padding-left: 10px;
-    padding-top: 0px;
-    color: #f6e6cb;
-  }
-  #btn1 {
-    margin-top: 200px;
-    margin-bottom: 0px;
-  }
-  #btn2 {
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  h1 {
-    margin: auto;
-    width: max-content;
-    color: white;
-  }
-  span {
-    display: inline-block;
-    padding: 5px;
-  }
-  .img-logo {
-    height: 94px;
-    margin-left: 45px;
-  }
-  .seperator {
-    height: 12px;
-    display: block;
-  }
-  .main {
-    padding: 70px;
-    width: 300px;
-    height: auto;
-    border: 1.5px grey solid;
-    border-radius: 5px;
-    margin: -4.5px auto;
-  }
-  label {
-    font-weight: bold;
-    color: white;
-    font-size: 1.25em;
-  }
-  input {
-    width: 280px;
-    border: none;
-    border-radius: 5px;
-    padding: 8px;
-    outline: none;
-  }
-  input[type="submit"] {
-    width: 260px;
-    background-color: red;
-    font-weight: bold;
-  }
-  input[type="submit"]:hover {
-    cursor: pointer;
-    border: 2px gray solid;
-    background-color: red;
-    transform: scale(0.95);
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-      url("/images/img4.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .brand {
-    margin-bottom: 13px;
-    color: red;
-    padding-top: 15px;
-  }
-  #errormessage {
-    display: flex;
-    justify-content: center;
-    border-radius: 12px;
-  }
-  .login {
-    margin: 0 auto;
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    padding: 30px 70px 143px 70px;
-  }
-  .login h1 {
-    color: white;
-    padding-bottom: 10px;
-  }
-  .remember-flex {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    font-size: 0.8rem;
-  }
-  .color_text {
-    color: #bdc7c9;
-  }
-  .color_link {
-    color: #bdc7c9;
-  }
-  .signup-link {
-    color: white;
-    text-decoration: none;
-  }
-  .signup-link:hover {
-    text-decoration: underline;
-  }
-  .face_icon {
-    color: #3b5998;
-    margin-right: 6px;
-    font-size: 20px;
-  }
-  .log_face {
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 0.8rem;
-  }
-  .login-face {
-    margin: 50px 0 15px 0;
-    vertical-align: middle;
-    color: #bdc7c9;
-  }
-  .new-members {
-    margin-bottom: 10px;
-    color: #bdc7c9;
-  }
-  .help a {
-    text-decoration: none;
-  }
-  .help a:hover {
-    text-decoration: underline;
-  }
-  .input-text {
-    margin-bottom: 20px;
-  }
-  .input-text input {
-    width: 100%;
-    height: 45px;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    outline: transparent;
-    text-indent: 18px;
-  }
-  .input-text input::-webkit-input-placeholder {
-    font-size: 1rem;
-    color: #bdc7c9;
-  }
-  .input-text input::-moz-placeholder {
-    font-size: 1rem;
-    color: #bdc7c9;
-    text-indent: 40px;
-  }
-  .signin-button {
-    margin-top: 20px;
-    padding: 13px;
-    border-radius: 5px;
-    background-color: red;
-    color: white;
-    border: none;
-    font-weight: bold;
-    font-size: 1.05rem;
-    cursor: pointer;
-  }
-  .aftersubmit {
-    opacity: 1;
-    width: 310px;
-    padding: 30px 70px 30px 70px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    margin: 0px auto;
-  }
-  .field-icon {
-    position: absolute;
-    margin-left: -25px;
-    margin-top: 15px;
-    color: white;
-  }
-  .btn_i {
-    width: 60%;
-    height: 50px;
-    background-color: #333;
-    border-radius: 5px;
-    border: none;
-    outline: transparent;
-    text-indent: 18px;
-    font-size: 1rem;
-    color: #bdc7c9;
-    margin: 0px 20px -500px 0px;
-  }
-  #check {
-    height: 50px;
-    margin: -500px 10px -500px;
-    width: 160%;
-    background-color: #333;
-    border-radius: 5px;
-    border: none;
-    display: inline;
-    text-indent: 18px;
-    font-size: 1rem;
-    color: #bdc7c9;
-  }
+  margin: 0;
+  padding: 0;
+}
+.back {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
+    url('https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=');
+  height: 110vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  border-radius: 50%;
+  padding: 25px;
+  width: 100px;
+}
+.flex-parent {
+  display: flex;
+}
+.jc-center {
+  justify-content: center;
+}
+#heading {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+#para {
+  padding-left: 10px;
+  padding-top: 0px;
+  color: #f6e6cb;
+}
+#btn1 {
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+#btn2 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+h1 {
+  margin: auto;
+  width: max-content;
+  color: white;
+}
+span {
+  display: inline-block;
+  padding: 5px;
+}
+.img-logo {
+  height: 94px;
+  margin-left: 45px;
+}
+.seperator {
+  height: 12px;
+  display: block;
+}
+.main {
+  padding: 70px;
+  width: 300px;
+  height: auto;
+  border: 1.5px grey solid;
+  border-radius: 5px;
+  margin: -4.5px auto;
+}
+label {
+  font-weight: bold;
+  color: white;
+  font-size: 1.25em;
+}
+input {
+  width: 280px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+}
+input[type='submit'] {
+  width: 260px;
+  background-color: red;
+  font-weight: bold;
+}
+input[type='submit']:hover {
+  cursor: pointer;
+  height: 51px;
+  border: 2px gray solid;
+  background-color: red;
+  transform: scale(0.95);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('/images/img4.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.brand {
+  margin-bottom: 13px;
+  color: red;
+  padding-top: 15px;
+}
+#errormessage {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+.login {
+  margin: 0 auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 30px 70px 143px 70px;
+}
+.login h1 {
+  color: white;
+  padding-bottom: 10px;
+}
+.remember-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.color_text {
+  color: #bdc7c9;
+}
+.color_link {
+  color: #bdc7c9;
+}
+.signup-link {
+  color: white;
+  text-decoration: none;
+}
+.signup-link:hover {
+  text-decoration: underline;
+}
+.face_icon {
+  color: #3b5998;
+  margin-right: 6px;
+  font-size: 20px;
+}
+.log_face {
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+.login-face {
+  margin: 50px 0 15px 0;
+  vertical-align: middle;
+  color: #bdc7c9;
+}
+.new-members {
+  margin-bottom: 10px;
+  color: #bdc7c9;
+}
+.help a {
+  text-decoration: none;
+}
+.help a:hover {
+  text-decoration: underline;
+}
+.input-text {
+  margin-bottom: 20px;
+}
+.input-text input {
+  width: 100%;
+  height: 45px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: transparent;
+  text-indent: 18px;
+}
+.input-text input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #bdc7c9;
+}
+.input-text input::-moz-placeholder {
+  font-size: 1rem;
+  color: #bdc7c9;
+  text-indent: 40px;
+}
+.signin-button {
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+.aftersubmit {
+  opacity: 1;
+  width: 310px;
+  padding: 30px 70px 30px 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  margin: 0px auto;
+}
+.field-icon {
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 15px;
+  color: white;
+}
+.btn_i {
+  width: 60%;
+  height: 50px;
+  background-color: #333;
+  border-radius: 5px;
+  border: none;
+  outline: transparent;
+  text-indent: 18px;
+  font-size: 1rem;
+  color: #bdc7c9;
+  margin: 0px 20px -500px 0px;
+}
+#check {
+  height: 50px;
+  margin: -500px 10px -500px;
+  width: 160%;
+  background-color: #333;
+  border-radius: 5px;
+  border: none;
+  display: inline;
+  text-indent: 18px;
+  font-size: 1rem;
+  color: #bdc7c9;
+}
