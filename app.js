@@ -71,8 +71,13 @@ app.get("/sign_up", registerController);
 const useradder = require("./controllers/newUser");
 app.post("/user/store", useradder);
 
-const registration = require("./controllers/registration");
-app.get("/registration", registration);
+// const registration = require("./controllers/registration");
+const Center = require("./models/center");
+app.get("/registration", (req, res) => {
+  const center = Center.find({});
+  console.log(center);
+  res.render("registration", center);
+});
 
 const van_system = require("./controllers/van_system");
 
