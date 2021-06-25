@@ -76,7 +76,7 @@ const Center = require("./models/center");
 app.get("/registration", async (req, res) => {
   const center = await Center.find({});
   console.log(center);
-  res.render("registration", center);
+  res.render("registration", {center} );
 });
 
 const van_system = require("./controllers/van_system");

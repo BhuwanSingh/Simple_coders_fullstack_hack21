@@ -19,13 +19,13 @@
       
         <table id="myTable">
             <!-- <% JSON.stringify(center)%> -->
+            <tr class="header2">
+                <th style="width:60%;">LOCATION</th>
+                <th style="width:40%;">PIN CODE </th>
+                <th style="width:40%;"> DATE  </th>
+              </tr>
             <% console.log(center) %>
             <% for(var i = 0 ; i < center.length ; i++){ %>
-            <tr class="header2">
-              <th style="width:60%;">LOCATION</th>
-              <th style="width:40%;">PIN CODE </th>
-              <th style="width:40%;"> DATE  </th>
-            </tr>
             <tr>
               <td><%= center[i].name %></td>
               <td><%= center[i].pin %></td>
