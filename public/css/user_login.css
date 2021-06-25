@@ -4,18 +4,12 @@ body{
   padding: 0;
 }
 
-.back{
-  background-image: linear-gradient(rgba(0, 0, 0,0.001),black),url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
-  height: 110vh;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-
-}
-.logo{
+.logo {
+  margin-left: 10px;
   border-radius: 50%;
+  height: 100px;
   padding: 25px;
-  width: 100px;
+  width: 110px;
 }
 .flex-parent{
   display: flex;
@@ -34,7 +28,7 @@ body{
 #para{
   padding-left:10px;
   padding-top: 0px;
-  color: #F6E6CB;
+  color: #0C4271;
 }
 #btn1{
   margin-top: 200px;
@@ -61,6 +55,7 @@ body{
     display: block;
   }
   .main {
+
     padding: 70px;
     width: 300px;
     height: auto;
@@ -98,14 +93,14 @@ body{
   body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.001), black),
-      url("https://media.gettyimages.com/photos/corona-virus-close-up-picture-id1212213050?k=6&m=1212213050&s=612x612&w=0&h=PB8tO76VOuM2trw2OtJ5k_y2E5CG-VVOrrc2G_lkiR8=");
-    height: 110vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6)),
+      url("https://images.unsplash.com/photo-1586205471086-62d113721732?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fG1hc2tzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    height: 120vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   }
   .brand {
@@ -117,15 +112,18 @@ body{
 
 
   .login{
-      margin: 0 auto;
-      width: 400px;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 5px;
-      padding: 30px 70px 143px 70px;
+    height: 600px;
+    margin: 0 auto;
+    width: 400px;
+    background-color:#FFFFFF30;
+    border-radius: 5px;
+    padding: 30px 70px 143px 70px;
+    backdrop-filter:blur(5px);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   .login h1{
-      color: white;
+      color: #0A1931;
       padding-bottom: 10px;
   }
 
@@ -146,7 +144,7 @@ body{
   }
 
   .signup-link{
-      color: white;
+      color: #0C4271;
       text-decoration: none;
   }
 
@@ -154,6 +152,7 @@ body{
 
   .signup-link:hover{
       text-decoration: underline;
+      color: #185ADB;
   }
 
   .face_icon{
@@ -176,14 +175,16 @@ body{
 
   .new-members{
       margin-bottom: 10px;
-      color: #bdc7c9;
+      color: #000000;
   }
 
   .help a{
       text-decoration: none;
+      color: #0C4271;
   }
   .help a:hover{
       text-decoration: underline;
+      color: #185ADB;
   }
 
 
@@ -196,7 +197,7 @@ body{
   .input-text input{
       width: 100%;
       height: 45px;
-      background-color: #333;
+      background-color: #0A1931;
       color: white;
       border-radius:5px;
       border: none;
