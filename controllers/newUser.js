@@ -19,33 +19,14 @@ module.exports = async (req, res) => {
       city: req.body.city,
     })
     console.log(newCreated)
-    if(req.body.pwd || parseInt(req.body.age)>=70)
-    res.redirect('/van_system')
+    if (req.body.pwd || parseInt(req.body.age) >= 70)
+      res.redirect('/van_system')
     res.redirect('/registration')
   } catch (err) {
-    console.log(err)
-    res.redirect('/notfound')
+    const vaidationErrors = Object.keys(error.errors).map(
+      (key) => errors.error[key].message
+    )
+    req.session.validationErrors = validationErrors
+    return res.redirect('/sign_up')
   }
-  //   try {
-  //     await User.create(arr)
-  //     console.log('Data Added')
-  //     //res.redirect('/registration')
-  //   } catch (err) {
-  //     console.log(err)
-  //     res.redirect('notfound')
-  //   }
-  //   User.create(newUser, (error, user) => {
-  //     console.log('this is not working')
-  //     if (error) {
-  //       const vaidationErrors = Object.keys(error.errors).map(
-  //         (key) => errors.error[key].message
-  //       )
-  //       req.session.validationErrors = validationErrors
-  //       return res.redirect('/sign_up')
-  //     }
-  //     if (req.body.age >= 70) {
-  //       return res.redirect('/van_system')
-  //     }
-  //     res.redirect('/registration')
-  //   })
 }
