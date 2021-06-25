@@ -106,25 +106,7 @@ h1 {
   background: #ffc110;
   cursor: pointer;
 }
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
 
-.left {
-  left: 0;
-  background-color: #111;
-}
-
-.right {
-  right: 0;
-  background-color: red;
-}
 
 .centered {
   position: absolute;
@@ -138,3 +120,9 @@ h1 {
   width: 150px;
   border-radius: 50%;
 }
+#map{
+  position: fixed;
+  left: 30%;
+  top: 50%;
+}
+
