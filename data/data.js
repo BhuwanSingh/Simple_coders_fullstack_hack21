@@ -7,7 +7,7 @@ const Center = require('./../models/Center')
 dotenv.config({ path: './config.env' })
 
 const DB =
-  'mongodb+srv://simple:dyFXgcLsu1ZHXwGJ@cluster0.c3hqp.mongodb.net/simple_coders_fullstack_hack2k21?retryWrites=true&w=majority'
+  'mongodb+srv://simple:dyFXgcLsu1ZHXwGJ@cluster0.c3hqp.mongodb.net/vaccine?retryWrites=true&w=majority'
 
 mongoose
   .connect(DB, {
@@ -39,7 +39,11 @@ const inData = async () => {
 //console.log(centres)
 const delData = async () => {
   try {
-    await Center.deleteMany()
+    if (process.argv[3] === '--c') {
+      await Center.deleteMany()
+    } else if (process.argv[3] === '--u') {
+      await User.deleteMany()
+    }
     console.log('Data deleted in DB')
   } catch (err) {
     console.log(err)
