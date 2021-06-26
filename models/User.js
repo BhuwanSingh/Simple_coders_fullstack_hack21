@@ -14,10 +14,13 @@ const person = new Schema({
       function (age) {
         return age > 0 && age < 200
       },
-      'Please Enter valid age',
+      'Please enter valid age',
     ],
   },
-  city: String,
+  city: {
+    type: String,
+    required: [true, 'Please enter city'],
+  },
   pwd: {
     type: Boolean,
     default: false,
