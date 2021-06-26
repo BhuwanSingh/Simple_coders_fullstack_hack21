@@ -86,13 +86,16 @@ app.get("/sign_up", registerController);
 const useradder = require("./controllers/newUser");
 app.post("/user/store", useradder);
 
+const associateUser = require("./controllers/associateUser")
+app.post("/associateUser" , associateUser)
+
 // const registration = require("./controllers/registration");
 const Center = require("./models/center");
 const User = require("./models/User");
 app.get("/registration", async (req, res) => {
   const center = await Center.find({});
   const user = await User.findOne({ _id: req.session.userId });
-  console.log(user);
+  // console.log(user);
   res.render("registration", { center, user });
 });
 
