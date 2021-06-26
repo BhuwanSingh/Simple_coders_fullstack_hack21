@@ -27,13 +27,18 @@
         <tr>
           <th id="col1">Location</th>
           <th>Pin Code</th>
+          <th>Disables / 70+ </th>
           <th>Date</th>
         </tr>
         <% for(var i = 0 ; i < van_data.length ; i++){ %>
         <tr>
           <td><b> <%= van_data[i].name %> </b><br><%= van_data[i].address%></td>
           <td ><%= van_data[i].pin%></td>
-          <td >Disables / 65+ </td>
+          <td ><% if(van_data[i].age == '70+'){ %>
+            70+
+            <%} else {%>
+              PWD
+            <%}%></td>
           <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
         
         <% } %>
