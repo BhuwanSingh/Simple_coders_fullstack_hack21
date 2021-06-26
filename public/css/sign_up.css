@@ -81,33 +81,34 @@ input {
   padding: 8px;
   outline: none;
 }
-input[type='submit'] {
-  cursor: pointer;
-  width: 260px;
-  background: linear-gradient(0deg, #0a81ab 0%, #5ac1fb 100%);
-  font-weight: bold;
-  color: white;
-  transition: all 0.1s ease-out;
+input {
+  width: 280px;
   border: none;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+}
+input[type="submit"] {
+  width: 260px;
+  color:#F9DFDC;
+  background-color:#0C4271;
+  font-weight: bold;
   box-shadow: -4px -4px 6px 0 #ffffff7f, 4px 4px 6px 0 rgba(116, 125, 136, 0.5),
     inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
     inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
+
 }
-input[type='submit']:before {
-  height: 0%;
-  width: 2px;
-}
-input[type='submit']:hover {
+input[type="submit"]:hover {
+  cursor: pointer;
+  width: 260px;
   height: 51px;
-  /* border: 2px grey solid; */
-  background: #fff;
+  border: 2px gray solid;
+  background-color:#F9DFDC;
+  color: #0C4271;
   transform: scale(0.95);
-  color: #121212;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+
 }
+
 body {
   margin: 0;
   padding: 0;

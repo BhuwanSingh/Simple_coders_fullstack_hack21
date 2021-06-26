@@ -45,6 +45,9 @@ body {
     padding-bottom: 30px;
     height: 30px;
     border-radius: 10px;
+    box-shadow: -4px -4px 6px 0 #ffffff7f, 4px 4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
   }
   #btn2 {
     width: 300px;
@@ -54,6 +57,9 @@ body {
     margin-bottom: 0px;
     height: 30px;
     border-radius: 15px;
+    box-shadow: -4px -4px 6px 0 #ffffff7f, 4px 4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
   }
   a {
     transition: all 0.5s ease-out;
