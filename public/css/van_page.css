@@ -6,7 +6,16 @@ html {
     margin: 0;
     padding:0;
 }
+#col1{
+  width: 60%;
+}
+#myInput{
+  width: 30%;
+  margin-left: 8%;
+  height: 4%;
+  background-color: white;
 
+}
 .header {
   height: 110vh;
   background-image: linear-gradient(#E8F0F2,#A2DBFA,#39A2DB);
@@ -27,27 +36,20 @@ h1{
     text-align: center;
     font-family: "Times New Roman", Times, serif;
 }
-.search-by-pincode{
 
-    height: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-    width: 200px;
-}
 .search-btn{
     margin-left: 20px;
-    height: 50px;
+    height: 6%;
     width: 150px;
-    background: #3EDBF0;
+    background: #0A1931;
     border: none;
-    color: #000;
-    border-radius: 25px;
+    color: white;
+    border-radius: 20px;
 
 }
 .search-btn:hover{
-    background: #51C4D3;
+    background: #053742;
+    color: white;
     cursor: pointer;
 
 }
@@ -55,16 +57,7 @@ h1{
     background: rgba(0,0,0,1);
     padding: 30px;
 }
-.submit-btn{
-    height: 50px;
-    width: 150px;
-    background: #3EDBF0;
-    border: none;
-    color: #000;
-    border-radius: 25px;
-     align-items: center ;
 
-}
 #myTable {
     border-collapse: collapse;
     width: 100%;
@@ -72,6 +65,7 @@ h1{
     font-size: 18px;
     background-color: #F4F9F955;
     backdrop-filter: blur(5px);
+
   }
 
   #myTable th, #myTable td {
@@ -86,7 +80,7 @@ h1{
 
   #myTable tr.header, #myTable tr:hover {
 
-    background-color: #3EDBF0;
+    background-color: #F0EBCC;
   }
   #myInput {
     background-image: url('/css/searchicon.png');
@@ -98,6 +92,7 @@ h1{
     border: 1px solid black;
     margin-bottom: 30px;
     margin-left: 50px;
+
   }
   .skip-btn{
     font-family: Arial, Helvetica, sans-serif;
@@ -106,17 +101,17 @@ h1{
     padding-left: 3%;
     position:absolute;
     left:180px;
-    top:80%;
+    top:90%;
     font-weight: bold;
     font-size: 15px;
     margin-left: 28%;
     text-decoration: none;
     height: 28px;
     width: 300px;
-    background: #3EDBF0;
+    background: #0A1931;
     border: none;
-    color: #000;
-    border-radius: 30px;
+    color: white;
+    border-radius: 25px;
 
 
 }
@@ -126,14 +121,14 @@ h1{
 }
 
 .skip-btn:hover{
-    background: #51C4D3;
+    background: #053742;
     cursor: pointer;
 }
 
 .centres {
     overflow-x: auto;
     overflow-y: auto;
-    height: 300px;
+    height: 50%;
     margin: auto;
     width: 50%;
     position: absolute;
@@ -150,8 +145,10 @@ h1{
 
   th {
     position: sticky;
+    position: fix;
     top: 0;
     z-index: 1;
-    background: #ffffff7f;
+    background: #0A1931;
+    color: white;
     backdrop-filter: blur(5px);
   }
