@@ -3,7 +3,39 @@ body {
     margin: 0;
     padding: 0;
   }
-
+  #btn_ish{
+    font-size: 20px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 70px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    outline: none;
+    width: 140px;
+    border: 2px #0A1931 solid;
+    color: #F9DFDC;
+    text-decoration:none;
+    font-weight: bold;
+    background-color: #0C4271;
+    box-shadow: -4px -4px 6px 0 #ffffff7f, 4px 4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
+  }
+  #btn_ish:visited{
+    color: #F9DFDC;
+    background-color: #0C4271;
+    font-weight: bold;
+    transform: scale(0.95);
+  }
+  #btn_ish:hover{
+    font-weight: bold;
+    background-color: #f9dfdc;
+    border: 2px #0A1931 solid;
+    color: #0C4271;
+  }
   .back {
     background-image: linear-gradient(rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6)),
       url('https://images.unsplash.com/photo-1607077644571-11791eec3c34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvcm9uYXZpcnVzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
