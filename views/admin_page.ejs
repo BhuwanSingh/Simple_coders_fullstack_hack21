@@ -38,7 +38,11 @@
         name="regform"
         autocomplete="off"
       >
+      
         <h1 class="sign">User Verification</h1>
+        <% if(message != ""){ %>
+          <span style="color:red"><b><%= message %></b></span>
+          <% } %>
         <div id="errormessage"></div>
         <span class="seperator"></span>
         <span class="seperator"></span>
