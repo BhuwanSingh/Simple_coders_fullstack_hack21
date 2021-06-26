@@ -1,25 +1,26 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+var uniqueValidator = require("mongoose-unique-validator");
 
 const person = new Schema({
   aadhar: {
     type: String,
-    required: [true, 'Please enter Aadhar'],
+    required: [true, "Please enter Aadhar"],
     unique: true,
   },
   age: {
     type: Number,
-    required: [true, 'Please enter age'],
+    required: [true, "Please enter age"],
     validate: [
       function (age) {
-        return age > 0 && age < 200
+        return age > 0 && age < 200;
       },
-      'Please enter valid age',
+      "Please enter valid age",
     ],
   },
   city: {
     type: String,
-    required: [true, 'Please enter city'],
+    required: [true, "Please enter city"],
   },
   pwd: {
     type: Boolean,
@@ -33,8 +34,13 @@ const person = new Schema({
     enum: [0, 1, 2],
     default: 0,
   },
-})
+});
 
-const User = mongoose.model('User', person)
+person.plugin(uniqueValidator);
+person.pre("save", (next) => {
+  next();
+});
 
-module.exports = User
+const User = mongoose.model("User", person);
+
+module.exports = User;

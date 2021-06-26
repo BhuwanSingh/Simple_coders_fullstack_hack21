@@ -48,8 +48,6 @@ module.exports = async (req, res) => {
         }
         res.redirect("/registration");
       }
-
-      console.log(error);
       if (error) {
         const validationErrors = Object.keys(error.errors).map(
           (key) => error.errors[key].message
