@@ -20,60 +20,92 @@
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
     <button class=" search-btn" type="button"> Search by Pin</button>
 
-    <table id="myTable">
-        <tr class="header2">
-          <th style="width:60%;">LOCATION</th>
-          <th style="width:40%;">PIN CODE </th>
-          <th style="width:40%;"> DATE  </th>
-          <th style="width:40%;"> SLOTS  </th>
+  </div>
+  <div class="container">
+    <div class="row centres">
+      <table class="myTable" id="myTable">
+        <tr>
+          <th>location</th>
+          <th>pin code</th>
+          <th>date</th>
+          
+         
+          
         </tr>
         <tr>
-          <td>CHIRAYU MEDICAL COLLEGE 18</td>
-          <td>462030</td>
-          <TD>26/06/2021</TD>
-          <TD>
-            <button id="slot"type="button" name="button">200</button>
-          </TD>
-
+          <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+          <td >462030</td>
+          <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+          
+          
         </tr>
         <tr>
-            <td>HAJELA HOSPITAL</td>
-            <td>462003</td>
-            <TD>28/06/2021</TD>
-            <TD>
-              <button id="slot" type="button" name="button">200</button>
-            </TD>
+        <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+        <td >462030</td>
+        <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+        
+        
+      </tr>
+      <tr>
+      <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+      <td >462030</td>
+      <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+      
+      
+    </tr>
+    <tr>
+    <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+    <td >462030</td>
+    <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+    
+    
+  </tr>
+  <tr>
+  <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+  <td >462030</td>
+  <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+  
+  
+</tr>
+<tr>
+<td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+<td >462030</td>
+<TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
 
-        </tr>
-        <tr>
-            <td>LIB. BUILDING ADMIN. BLOCK GMC</td>
-            <td>462001</td>
-            <TD>29/06/2021</TD>
-            <TD>
-              <button id="slot" type="button" name="button">200</button>
-            </TD>
 
-        </tr>
-        <tr>
-            <td>ONCOLOGY BLOCK AIIMS COVI</td>
-            <td>462020</td>
-            <TD>30/06/2021</TD>
-            <TD>
-              <button id="slot" type="button" name="button">200</button>
-            </TD>
-
-        </tr>
+</tr>
+<tr>
+  <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+  <td >462030</td>
+  <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+  
+  
+  </tr>
+  <tr>
+    <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+    <td >462030</td>
+    <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+    
+    
+    </tr>
+    <tr>
+      <td><b> MEDICAL COLLEGE 18 </b><br>Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh</td>
+      <td >462030</td>
+      <TD >  <button id="slot"type="button" name="button">27/06/2021 </button> </TD>
+      
+      
+      </tr>
+       
+       
       </table>
+      
       <script>
         function myFunction() {
-
           var input, filter, table, tr, td, i, txtValue;
           input = document.getElementById("myInput");
           filter = input.value.toUpperCase();
           table = document.getElementById("myTable");
           tr = table.getElementsByTagName("tr");
-
-
           for (i = 0; i < tr.length; i++) {
             td = tr[i].getElementsByTagName("td")[1];
             if (td) {
@@ -87,15 +119,11 @@
           }
         }
         </script>
-        <div>
-
-        </div>
+       </div>
         <div>
           <a class="skip-btn" href="/registration">Skipped The Date ? Visit The Centre</a>
         </div>
-        <div class="covid">
-
-        </div>
+        
 
 </form>
 </div>

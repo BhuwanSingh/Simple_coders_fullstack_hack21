@@ -59,7 +59,8 @@ app.post('/users/login', verifier)
 
 const validmiddleware = require('./middleware/validmiddleware')
 const userProfilePage = require('./controllers/userProfile')
-app.get('/user/profile', validmiddleware, userProfilePage)
+// middleware to be added later " validmiddleware, "
+app.get('/user/profile',userProfilePage)
 
 const vaccineVerify = require('./controllers/vaccineVerify')
 app.post('/admin/userverify', vaccineVerify)

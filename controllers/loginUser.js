@@ -8,11 +8,11 @@ module.exports = (req, res) => {
       if (user.secret_code == secret_code) {
         req.session.userID = user._id;
         console.log("User logged in:", aadhar);
-        res.redirect("/user/profile");
+        // res.redirect("/user/profile");
+        res.render("user_profile" , { user });
       }
     } else {
       redirect("/login");
     }
-    console.log(error);
   });
 };
