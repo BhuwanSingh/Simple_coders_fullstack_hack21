@@ -28,13 +28,16 @@
 
         <table id="myTable">
           <% JSON.stringify(center)%>
+          <thead>
           <tr class="header2">
             <th style="width: 60%">LOCATION</th>
             <th style="width: 40%">PIN CODE</th>
             <th style="width: 40%">DATE</th>
           </tr>
+           </thead>
           <% for(var i = 0 ; i < center.length ; i++){ %>
-          <tr>
+             <tbody>
+         <tr>
             <td><%= center[i].name %></td>
             <td><%= center[i].pin %></td>
             <td><%= center[i].slots %></td>
@@ -43,21 +46,18 @@
             <td><%= center[i].age %></td>
             <td><%= center[i].vaccine %></td>
           </tr>
+           </tbody>
           <% } %>
         </table>
+        <div class="map">
         <iframe
           id="map"
           src="https://www.google.com/maps/d/embed?mid=1Jvw5a0QX8UFMvlZYwUNFpNI-QVWiAddi"
-          width="640"
-          height="480"
+          width="400"
+          height="400"
         ></iframe>
-        <div></div>
-        <div>
-          <a class="skip-btn" href="/registration"
-            >Skipped The Date ? Visit The Centre</a
-          >
         </div>
-        <div class="covid"></div>
+      
       </form>
     </div>
   </body>
