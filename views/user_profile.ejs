@@ -12,10 +12,10 @@
     <div class="secretcode">Secret Code</div>
 
     <div class="value"><%= book.secret_code %></div>
-    <div class="livetoken">Live Token Tracker</div>
-    <div class="numberCircle">10</div>
+    <div class="livetoken">Time Alloted:</div>
+    <div class="numberCircle" id="timeAllot"></div>
     <div class="yourtoken">Your Token</div>
-    <div class="numberCircle2"><% book.token %></book.token></div>
+    <div class="numberCircle2" id="tokenNO"><%= book.token %></book.token></div>
     <div class="user">
       Hi, <br />
       Verification Method : Aadhar <br />
@@ -28,5 +28,23 @@
     <div class="certify">
       <button class="button1" type="button" name="button">Certificate</button>
     </div>
+    <script type="text/javascript">
+      var token = document.getElementById("tokenNO").innerHTML*1;
+      var time = 32400000+(token-1)*1000*60*5;
+
+      function msToTime(duration) {
+      var minutes = Math.floor((duration / (1000 * 60)) % 60),
+        hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+
+        return hours + ":" + minutes;
+      }
+      console.log(msToTime(time));
+      const timeDoc = document.getElementById("timeAllot");
+      timeDoc.innerHTML = msToTime(time);
+
+    </script>
   </body>
 </html>
