@@ -136,8 +136,12 @@ h1{
 }
 .table-fixed tbody{
   display: block;
+<<<<<<< HEAD
   height: 450px;
 
+=======
+  height: 100px;
+>>>>>>> 64da4e6cd371f4405f24aa62f002dc5e7b2771e1
   overflow-y: auto;
 }
 .table-fixed tr{
