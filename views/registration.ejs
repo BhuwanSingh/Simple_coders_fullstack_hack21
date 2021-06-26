@@ -12,30 +12,20 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="/css/registration.css" />
-    <title>Van System</title>
+    <title>Registration</title>
   </head>
 
   <body>
-    <h1>Registration</h1>
+    <h1 class="animate__animated animate__bounce">Registration</h1>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for pin..">
+    <button id="btn_ish"class="search-btn" type="button"> Search by Pin</button>
 
-    <div class="search-box">
-      <form>
-        <input
-          id="btn_i"
-          type="number"
-          name="pin"
-          placeholder="Enter Your pin"
-          autocomplete
-        />
-
-        <button id="btn_ish">Search</button>
-      </form>
-    </div>
     <div class="container">
-      <div class="table">
+      <div class="table" class="myTable">
         <div class="row centres">
-          <table id="myTable">
+          <table class="myTable" id="myTable">
             <tr>
               <th id="col1">Location</th>
               <th>Pin Code</th>
