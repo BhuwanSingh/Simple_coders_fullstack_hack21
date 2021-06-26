@@ -53,9 +53,9 @@ h1 {
   align-items: center;
 }
 #myTable {
+  height: 60vh;  
+  overflow:scroll;
   border-collapse: collapse;
-  height: 80%;
-  width: 40%;
   border: 1px solid #ddd;
   font-size: 18px;
   z-index: 1;
