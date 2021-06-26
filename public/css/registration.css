@@ -1,157 +1,56 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-        body{
-    margin: 0;
-    padding:0;
-}
-
-.header {
-    height: 110vh;
+body {
+  height: 100vh;
 background-image: linear-gradient(rgba(0,0,0,0.005),rgba(0,0,0,0.4)),url("https://images.unsplash.com/photo-1589485257513-697766b2358b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHZhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-    background-size: cover;
- background-position: center;
- display: flex;
-justify-content: center;
-align-items: top;
+  background-size: cover;
+background-position: center;
 font-family: sans-serif;
 }
 h1{
-    color: #0F3057;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-}
-.search-by-pincode{
-
-    height: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-    width: 200px;
-}
-.search-btn{
-    margin-left: 20px;
-    height: 50px;
-    width: 150px;
-    background: #3EDBF0;
-    border: none;
-    color: #000;
-    border-radius: 25px;
-
-}
-.search-btn:hover{
-    background: #51C4D3;
-    cursor: pointer;
-
-}
-.form-box{
-    background: rgba(0,0,0,1);
-    padding: 30px;
-}
-.submit-btn{
-    height: 50px;
-    width: 150px;
-    background: #3EDBF0;
-    border: none;
-    color: #000;
-    border-radius: 25px;
-     align-items: center ;
-
-}
-#myTable {
-    border-collapse: collapse;
-    width: 50%;
-    border: 1px solid black;
-    font-size: 18px;
-    background-color: #F4F9F955;
-    backdrop-filter: blur(5px);
-    position: absolute;
-    top: 40%;
-    left: 10%;
-
-  }
-
-  #myTable th, #myTable td {
-    text-align: left;
-    padding: 12px;
-
-  }
-
-  #myTable tr {
-
-    border-bottom: 1px solid black;
-  }
-
-  #myTable tr.header, #myTable tr:hover {
-
-    background-color: #3EDBF0;
-  }
-  #myInput {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 40%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid black;
-    margin-bottom: 30px;
-    margin-left: 50px;
-  }
-  .skip-btn{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1.5%;
-    padding-bottom: 1%;
-    padding-left: 3%;
-    position:absolute;
-    left:180px;
-    top:80%;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 28%;
-    text-decoration: none;
-    height: 28px;
-    width: 300px;
-    background: #3EDBF0;
-    border: none;
-    color: #000;
-    border-radius: 30px;
-
-
-}
-.submit-btn:hover{
-    background: #51C4D3;
-    cursor: pointer;
+  color: #0F3057;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.skip-btn:hover{
-    background: #51C4D3;
-    cursor: pointer;
+.search-box {
+  margin: auto;
+  width: 50%;
+  align-items: center;
 }
-.table-fixed tbody{
-  display: block;
-<<<<<<< HEAD
-  height: 450px;
 
-=======
-  height: 100px;
->>>>>>> 64da4e6cd371f4405f24aa62f002dc5e7b2771e1
+.centres {
+  overflow-x: auto;
   overflow-y: auto;
-}
-.table-fixed tr{
-  display: block;
+  height: 300px;
+  margin: auto;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #ffffff7f;
+  backdrop-filter: blur(5px);
+}
 .map{
-position: absolute;
-top: 40%;
-right: 5%;
-height: 40%;
-
-}
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  height: 40%;
+  
+  }
