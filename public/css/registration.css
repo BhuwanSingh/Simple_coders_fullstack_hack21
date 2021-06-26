@@ -35,7 +35,8 @@ td{
 }
 #myInput{
   width: 30%;
-  margin-left: 8%;;
+  margin-left: 8%;
+  height: 6%;
 }
 #btn_ish{
   margin-left: 2%;
@@ -43,6 +44,7 @@ td{
   color: white;
   width: 200px;
   border-radius: 20px;
+  height: 6%;
 }
 
 
