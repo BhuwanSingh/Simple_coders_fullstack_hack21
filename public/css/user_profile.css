@@ -6,52 +6,65 @@
    height: 100vh;
  }
 
+
 .secretcode {
 
-    width: 200px;
-    height: 40px;
-    padding: 8px;
+    width: 15%;
+    height: 45px;
+    padding: 15px;
     margin-left: 30px;
 
-    background: rgb(14, 13, 13);
-    border: 2px solid rgba(248, 245, 245, 0.932);
-    color: #F29191;
+
+    background: #0A1931;
+    border: 2px solid #232323;
+    color: #F9DFDC;
     text-align: center;
 
     font: 32px Arial, sans-serif;
     position: fixed;
     top: 10%;
-    left: 5%;
+    left: 10%;
+    border-radius: 25px;
+}
+.secretcode:hover{
+  background: #F9DFDC;
+  color: #0A1931;
 }
 
 .value {
 
-    width: 200px;
-    height: 40px;
-    padding: 8px;
-    margin-left: 20px;
-    background: rgb(14, 13, 13);
-    border: 2px solid rgba(248, 245, 245, 0.932);
-    color: #F29191;
-    text-align: center;
+  width: 15%;;
+  height: 45px;
+  padding: 15px;
+  margin-left: 27%;
 
-    font: 32px Arial, sans-serif;
-    position: fixed;
-    top: 10%;
-    left: 30%;
+  background: #0A1931;
+  border: 2px solid #232323;
+  color: #F9DFDC;
+  text-align: center;
+
+  font: 32px Arial, sans-serif;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  border-radius: 25px;
+}
+.value:hover{
+  background: #F9DFDC;
+  color: #0A1931;
 }
 
 
 
 .livetoken {
 
-    width: 200px;
-    height: 80px;
-    padding: 8px;
+    width: 20%;
+    height: 8%;
+    padding-top: 2%;
 
-    background: rgb(14, 13, 13);
+    background: #0A1931;
     border: 2px solid rgba(248, 245, 245, 0.932);
-    color: rgb(215, 236, 25);
+    color: #A2DBFA;
     text-align: center;
 
     font: 32px Arial, sans-serif;
@@ -63,9 +76,9 @@
 
 .numberCircle {
     animation: flicker 1.5s infinite alternate;
-  color: #fff;
+    color: #fff;
     border-radius: 10%;
-    width: 40px;
+    width: 5%;
     height: 40px;
     padding: 20px;
 
@@ -76,7 +89,7 @@
 
     font: 32px Arial, sans-serif;
     position: fixed;
-    top: 30%;
+    top: 28%;
     right: 10%;
 }
 @keyframes flicker {
@@ -101,13 +114,13 @@
   }
 .yourtoken {
 
-    width: 200px;
-    height: 60px;
-    padding: 8px;
+    width:20%;
+    height: 8%;
+    padding-top: 2%;
 
-    background: rgb(17, 17, 17);
+    background: #0A1931;
     border: 2px solid rgba(248, 247, 247, 0.973);
-    color: rgb(227, 252, 6);
+    color: #A2DBFA;
     text-align: center;
 
     font: 32px Arial, sans-serif;
@@ -119,7 +132,7 @@
     animation: flicker 1.5s infinite alternate;
   color: #fff;
     border-radius: 10%;
-    width: 40px;
+    width: 5%;
     height: 40px;
     padding: 20px;
 
@@ -130,7 +143,7 @@
 
     font: 32px Arial, sans-serif;
     position: fixed;
-    top: 70%;
+    top: 68%;
     right: 10%;
 }
 @keyframes flicker {
@@ -155,34 +168,43 @@
   }
   .user{
 
-    width: 600px;
-    height: 250px;
-    padding: 8px;
-    padding-top: 30px;
-    padding-left: 20px;
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    padding-left: 2%;
 
-    background: rgb(14, 13, 13);
+    background: #0A1931;
     border: 2px solid rgba(248, 245, 245, 0.932);
     color:white;
     text-align: left;
 
     font: 32px Arial, sans-serif;
     position: fixed;
-    top: 40%;
+    top: 25%;
     left: 7%;
+}
+#text{
+  color: #A2DBFA;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .button1{
-  margin-top: 10px;
-    width: 150px;
+    margin-top: 10px;
+    width: 15%;
     height: 70px;
     padding: 8px;
     text-align: center;
     font-size: 20px;
     font: Arial, sans-serif;
     position: fixed;
-    top: 83%;
-    left: 22%;
+    top: 84%;
+    left: 29%;
     border-radius: 50px;
 
+}
+.button1:hover{
+  color: #F9DFDC;
+  background: #0A1931;
 }
