@@ -9,7 +9,7 @@ module.exports = (req, res) => {
         req.session.userID = user._id;
         console.log("User logged in:", aadhar);
         // res.redirect("/user/profile");
-        res.render("user_profile" , { user });
+        res.render("user_profile", { user });
       }
     } else {
       redirect("/login");

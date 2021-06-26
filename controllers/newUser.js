@@ -9,30 +9,8 @@ const secretCode = async (length) => {
   return secret;
 };
 
-// module.exports = async (req, res) => {
-//   try {
-//     const newCreated = await User.create({
-//       aadhar: req.body.aadhar,
-//       age: parseInt(req.body.age),
-//       pwd: req.body.pwd ? true : false,
-//       secret_code: await secretCode(5),
-//       city: req.body.city,
-//     });
-//     console.log(newCreated);
-//     if (req.body.pwd || parseInt(req.body.age) >= 70)
-//       res.redirect("/van_system");
-//     res.redirect("/registration");
-//   } catch (err) {
-//     const vaidationErrors = Object.keys(err.errors).map(
-//       (key) => err.error[key].message
-//     );
-//     req.session.validationErrors = validationErrors;
-//     return res.redirect("/sign_up");
-//   }
-// };
-
 module.exports = async (req, res) => {
-  age = req.body.age || "0"
+  age = req.body.age || "0";
   User.create(
     {
       aadhar: req.body.aadhar,
@@ -43,6 +21,7 @@ module.exports = async (req, res) => {
     },
     (error, user) => {
       if (user) {
+        req.session.userId = user._id;
         if (user.pwd || user.age >= 70) {
           res.redirect("/van_system");
         }
