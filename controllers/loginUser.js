@@ -1,6 +1,7 @@
 const User = require('../models/User')
 module.exports = (req, res) => {
   const { aadhar, secret_code } = req.body
+  // find one is to be done on book
   User.findOne({ aadhar }, (error, user) => {
     console.log(user.secret_code)
     console.log(secret_code)
@@ -9,6 +10,8 @@ module.exports = (req, res) => {
         req.session.userID = user._id
         console.log('User logged in:', aadhar)
         // res.redirect("/user/profile");
+
+        // object to be passed is book 
         res.render('user_profile', { user })
       }
     } else {

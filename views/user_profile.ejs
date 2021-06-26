@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/css/user_profile.css"/>
     <title>User Profile</title>
   </head>
 
   <body>
-    <!-- <% console.log(user) %> -->
     <div class="secretcode">Secret Code</div>
 
     <div class="value"><%= book.secret_code %></div>
     <div class="livetoken">Live Token Tracker</div>
-    <div class="numberCircle">15</div>
+    <div class="numberCircle">10</div>
     <div class="yourtoken">Your Token</div>
-    <div class="numberCircle2">10</div>
+    <div class="numberCircle2"><% book.token %></book.token></div>
     <div class="user">
       Hi, <br />
       Verification Method : Aadhar <br />
-      Centre Address : Manit TT Nagar, Bhopal <br />
-      Time slot : 4-7 pm <br />
-      Dose number : 1 <br />
-      Vaccine : Covishield <br />
+      <%= book.center_name %><br />
+      <%= book.center_address %><br />
+      <%= book.city %><br />
+      <%= book.dose %><br />
+      <%= book.age %><br />
     </div>
     <div class="certify">
       <button class="button1" type="button" name="button">Certificate</button>
