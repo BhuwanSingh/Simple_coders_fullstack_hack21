@@ -96,5 +96,22 @@ th {
 #drive {
   font-size: 12px;
   color: red;
-  
+  transform: translateY(100px);
+  position: relative;
+  animation: bounce 1s ease infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    top: 0px;
+  }
+  40% {
+    top: -15px;
+  }
+  60% {
+    top: -7.5px;
+  }
 }
