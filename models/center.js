@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const walking = new Schema({
   name: String,
@@ -9,7 +9,11 @@ const walking = new Schema({
   paid_free: String,
   age: String,
   vaccine: String,
-});
+  drive: {
+    type: Boolean,
+    default: false,
+  },
+})
 
-const Center = mongoose.model("Center", walking);
-module.exports = Center;
+const Center = mongoose.model('Center', walking)
+module.exports = Center
