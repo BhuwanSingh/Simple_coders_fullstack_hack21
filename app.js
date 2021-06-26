@@ -60,7 +60,7 @@ const userProfilePage = require("./controllers/userProfile");
 app.get("/user/profile", validmiddleware, userProfilePage);
 
 const vaccineVerify = require("./controllers/vaccineVerify");
-app.post("/admin/user/verfiy", vaccineVerify);
+app.post("/admin/userverify", vaccineVerify);
 
 const worker_login = require("./controllers/adminLoginController");
 app.get("/worker_login", worker_login);
