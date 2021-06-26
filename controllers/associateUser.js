@@ -6,10 +6,5 @@ module.exports = async (req, res) => {
   const user = await User.findById(req.session.userId);
   const center = await Center.findById(req.body.slots);
 
-  const userUpdated = await User.findByIdAndUpdate(req.session.userId, {
-    center_name: center.name,
-    center_address: center.address,
-  })
-  console.log(userUpdated)
   res.render('user_profile', { user })
 }

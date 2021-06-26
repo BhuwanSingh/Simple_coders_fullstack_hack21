@@ -34,9 +34,6 @@ const person = new Schema({
     enum: [0, 1, 2],
     default: 0,
   },
-  center_name: String,
-  center_address: String,
-  token: Number,
 })
 
 person.plugin(uniqueValidator, { message: 'Please enter unique {PATH}' })
