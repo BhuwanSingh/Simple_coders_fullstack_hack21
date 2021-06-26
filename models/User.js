@@ -13,7 +13,7 @@ const person = new Schema({
     required: [true, 'Please enter age'],
     validate: [
       function (age) {
-        return age > 0 && age < 200
+        return age > 17 && age < 200
       },
       'Please enter valid age',
     ],

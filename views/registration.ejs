@@ -49,9 +49,12 @@
             <td><%= center[i].pin %></td>
 
             <TD
-              ><button id="slot" type="button" name="button">
+              >
+              <form action="/associateUser" method="post">
+                <button id="slot" type="submit" name="slots">
                 <%= center[i].slots %>
               </button>
+              </form>
               <br>
               <div class="vacc">
                 <%= center[i].vaccine %>
