@@ -136,7 +136,7 @@ h1{
 }
 .table-fixed tbody{
   display: block;
-  height: 300px;
+  height: 100px;
   overflow-y: auto;
 }
 .table-fixed tr{

@@ -46,8 +46,11 @@
         autocomplete="off"
       >
         <h1 class="sign">Sign Up</h1>
-        <div id="errormessage"><% console.log(errors) %></div>
+        <% if(errors != null && errors.length > 0){ %>
+          <% for (var i = 0; i < errors.length; i++) { %>
+        <div id="errormessage"><% errors[i] %></div>
         <span class="seperator"></span>
+        <% } %> <% } %>
         <div class="input-text">
           <input type="text" name="aadhar" placeholder="Aadhar Card" />
         </div>
