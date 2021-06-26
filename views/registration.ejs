@@ -49,24 +49,31 @@
               </td>
               <td><%= center[i].pin %></td>
 
-              <TD
-                ><button id="slot" type="button" name="button">
-                  <%= center[i].slots %>
-                </button>
-                <br />
-                <div class="vacc">
-                  <%= center[i].vaccine %>
-                  <br />
-                </div>
-                <div class="age">
-                  <%= center[i].age %>
-                  <br />
-                </div>
-              </TD>
-            </tr>
-            <% } %>
-          </table>
-        </div>
+            <td><b> <%= center[i].name %></b><br /><%= center[i].address %></td>
+            <td><%= center[i].pin %></td>
+
+            <TD
+              >
+              <form action="/associateUser" method="post">
+                <button id="slot" type="submit" name="slots">
+                <%= center[i].slots %>
+              </button>
+              </form>
+              <br>
+              <div class="vacc">
+                <%= center[i].vaccine %>
+                <br>
+              </div>
+              <div class="age">
+                <%= center[i].age %>
+                <br>
+              </div>
+              </TD
+            >
+          </tr>
+          <% } %>
+        </table>
+      </div>
       </div>
 
       <div class="map row">
