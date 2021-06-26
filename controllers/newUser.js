@@ -24,8 +24,9 @@ module.exports = async (req, res) => {
         req.session.userId = user._id;
         if (user.pwd || user.age >= 70) {
           res.redirect("/van_system");
+        } else {
+          res.redirect("/registration");
         }
-        res.redirect("/registration");
       }
       if (error) {
         const validationErrors = Object.keys(error.errors).map(
