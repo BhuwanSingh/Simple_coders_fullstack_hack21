@@ -1,3 +1,4 @@
 module.exports = (req, res) => {
-  res.render("user_login");
+  var errors = "";
+  res.render("user_login" , {errors});
 };

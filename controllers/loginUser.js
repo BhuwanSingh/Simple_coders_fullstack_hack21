@@ -10,6 +10,7 @@ module.exports = async (req, res) => {
       res.render("user_profile", { book });
     }
   } else {
-    res.redirect("/login");
+    // res.redirect("/login");
+    res.render("user_login" , {errors : "Please enter the Aadhar and secret code you've registered your vaccine with."})
   }
 };

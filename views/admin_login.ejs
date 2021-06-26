@@ -44,7 +44,9 @@
         <div id="errormessage"></div>
         <span class="seperator"></span>
         <span class="seperator"></span>
-
+        <% if(message != ""){ %>
+          <span style="color: red;"><b><%= message %></b></span> 
+          <% } %>
         <div class="input-text">
           <input
             type="text"
