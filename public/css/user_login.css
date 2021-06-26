@@ -117,8 +117,7 @@ body{
   body {
     margin: 0;
     padding: 0;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6)),
-      url("https://images.unsplash.com/photo-1586205471086-62d113721732?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fG1hc2tzfGVufDB8fDB8Ymx1ZXw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-image: linear-gradient(#E8F0F2,#A2DBFA,#39A2DB);
     height: 120vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -139,7 +138,7 @@ body{
     height: 600px;
     margin: 0 auto;
     width: 400px;
-    background-color:#FFFFFF30;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     padding: 30px 70px 143px 70px;
     backdrop-filter:blur(5px);
