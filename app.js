@@ -43,6 +43,9 @@ app.use("*", (req, res, next) => {
   next();
 });
 
+const flash = require("connect-flash")
+app.use(flash())
+
 const mainController = require("./controllers/mainPage");
 app.get("/", mainController);
 
