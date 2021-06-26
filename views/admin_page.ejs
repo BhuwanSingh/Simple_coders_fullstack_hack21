@@ -1,102 +1,89 @@
-
 <!DOCTYPE html>
 
 <html>
   <head>
     <title>Sign In</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/user_login.css">
-
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/user_login.css" />
   </head>
   <body>
     <nav>
-      <div>
-
-      </div>
+      <div></div>
       <img
         class="logo"
         src="https://ysm-res.cloudinary.com/image/upload/ar_16:9,c_fill,dpr_3.0,f_auto,g_faces:auto,q_auto:eco,w_400/v1/yale-medicine/live-prod/ym_new/images/d9a2e072-cf8e-4bc6-95c1-6aef77f379bb_tcm990-407465.jpg"
         alt=""
       />
-        <p id="para">Vaccine on the go</p>
-
-
+      <p id="para">Vaccine on the go</p>
     </nav>
 
     <div class="login-div">
       <form
-      action="/users/login"
-      method="POST"
-      class="login" onsubmit="return DisplayResults()"
-      name="regform"
-      autocomplete="off">
+        action="/admin/user/verify"
+        method="POST"
+        class="login"
+        name="regform"
+        autocomplete="off"
+      >
+        <h1 class="sign">User Verification</h1>
+        <div id="errormessage"></div>
+        <span class="seperator"></span>
+        <span class="seperator"></span>
 
+        <div class="input-text">
+          <input
+            type="text"
+            name="aadhar"
+            placeholder="Aadhar Number"
+            oninput="change()"
+          />
+          <span class="seperator"></span>
+        </div>
+        <div class="input-text">
+          <input
+            id="pass_signup"
+            type="password"
+            name="secret_code"
+            placeholder="Secret Code"
+            oninput="change()"
+          />
+        </div>
 
-      <h1 class="sign">User Verification</h1>
-      <div id="errormessage"></div>
-      <span class="seperator"></span>
-      <span class="seperator"></span>
-
-  <div class="input-text">
-
-
-    <input
-      type="text"
-      name="aadhar"
-      placeholder="Aadhar Number"
-      oninput="change()"
-    />
-    <span class="seperator"></span>
-  </div>
-      <div class="input-text">
+        <span class="seperator"></span>
+        <span class="seperator"></span>
+        <span class="seperator"></span>
 
         <input
-          id = "pass_signup"
-          type="password"
-          name="secret_code"
-          placeholder="Secret Code"
-          oninput="change()"
+          title="User Verified"
+          class="signin-button"
+          type="submit"
+          value="Verify"
         />
-
-      </div>
-
-        <span class="seperator"></span>
-        <span class="seperator"></span>
-        <span class="seperator"></span>
-
-        <input title="User Verified"class="signin-button" type="submit" value="Verify" />
         <div class="remember-flex">
-            <div>
-
-            </div>
-            <div class="help">
-
-            </div>
+          <div></div>
+          <div class="help"></div>
         </div>
-        <div class="login-face">
-
-        </div>
-        <br>
-        <div class="new-members">
-
-        </div>
-        <br>
-
+        <div class="login-face"></div>
+        <br />
+        <div class="new-members"></div>
+        <br />
       </form>
 
-
-
-        <br>
-        <br>
+      <br />
+      <br />
     </div>
-
-
   </body>
 </html>

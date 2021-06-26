@@ -43,8 +43,8 @@ app.use("*", (req, res, next) => {
   next();
 });
 
-const flash = require("connect-flash")
-app.use(flash())
+const flash = require("connect-flash");
+app.use(flash());
 
 const mainController = require("./controllers/mainPage");
 app.get("/", mainController);
@@ -58,6 +58,9 @@ app.post("/users/login", verifier);
 const validmiddleware = require("./middleware/validmiddleware");
 const userProfilePage = require("./controllers/userProfile");
 app.get("/user/profile", validmiddleware, userProfilePage);
+
+const vaccineVerify = require("./controllers/vaccineVerify");
+app.post("/admin/user/verfiy", vaccineVerify);
 
 const worker_login = require("./controllers/adminLoginController");
 app.get("/worker_login", worker_login);
@@ -79,7 +82,7 @@ const Center = require("./models/center");
 app.get("/registration", async (req, res) => {
   const center = await Center.find({});
   // console.log(center);
-  res.render("registration", {center} );
+  res.render("registration", { center });
 });
 
 const van_system = require("./controllers/van_system");
