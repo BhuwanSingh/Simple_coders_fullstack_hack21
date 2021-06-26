@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-background-image: linear-gradient(#E8F0F2,#A2DBFA,#39A2DB);
+  background-image: linear-gradient(#e8f0f2, #a2dbfa, #39a2db);
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
@@ -15,38 +15,35 @@ h1 {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
-th{
+th {
   text-align: center;
   font-size: 20px;
-
 }
-td{
-
+td {
   text-align: center;
-  background-color: #A4EBF37F;
+  background-color: #a4ebf37f;
   backdrop-filter: blur(5px);
 }
-#col1{
+#col1 {
   width: 60%;
 }
-#btn_i{
+#btn_i {
   width: 20%;
   left: 0%;
 }
-#myInput{
+#myInput {
   width: 30%;
   margin-left: 8%;
   height: 6%;
 }
-#btn_ish{
+#btn_ish {
   margin-left: 2%;
-  background-color: #0A1931;
+  background-color: #0a1931;
   color: white;
   width: 200px;
   border-radius: 20px;
   height: 6%;
 }
-
 
 .centres {
   overflow-x: auto;
@@ -58,16 +55,15 @@ td{
   top: 40%;
   left: 8%;
 }
-.vacc{
+.vacc {
   text-transform: uppercase;
   font-size: 12px;
   text-align: center;
 }
-.age{
+.age {
   color: red;
 }
 table {
-
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -82,11 +78,11 @@ th {
   position: fix;
   top: 0;
   z-index: 1;
-  background: #0A1931;
+  background: #0a1931;
   color: white;
   backdrop-filter: blur(5px);
 }
-#map{
+#map {
   height: 90%;
 }
 .map {
@@ -95,5 +91,10 @@ th {
   right: 4%;
   height: 59%;
   width: 40%;
+}
 
-  }
+#drive {
+  font-size: 12px;
+  color: red;
+  
+}
