@@ -6,14 +6,10 @@ module.exports = async (req, res) => {
   const user = await User.findById(req.session.userId);
   const center = await Center.findById(req.body.slots);
 
-  cost disUser.findByIdAndUpdate(user_id, { name: "Gourav" }, function (err, docs) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("Updated User : ", docs);
-    }
-  });
-
-  const userUpdated = await User.findByIdAndUpdate(req.session.userId);
-  res.render("user_profile", { user });
-};
+  const userUpdated = await User.findByIdAndUpdate(req.session.userId, {
+    center_name: center.name,
+    center_address: center.address,
+  })
+  console.log(userUpdated)
+  res.render('user_profile', { user })
+}

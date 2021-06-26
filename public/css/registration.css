@@ -30,23 +30,21 @@ td{
   width: 60%;
 }
 #btn_i{
+  width: 20%;
+  left: 0%;
+}
+#myInput{
   width: 30%;
-  left: 2%;
-
-
+  margin-left: 8%;;
 }
 #btn_ish{
   margin-left: 2%;
   background-color: #0A1931;
   color: white;
-  width: 100px;
+  width: 200px;
   border-radius: 20px;
 }
-.search-box {
-  margin-left: 8%;
-  width: 60%;
 
-}
 
 .centres {
   overflow-x: auto;
@@ -79,6 +77,7 @@ table {
 
 th {
   position: sticky;
+  position: fix;
   top: 0;
   z-index: 1;
   background: #0A1931;
