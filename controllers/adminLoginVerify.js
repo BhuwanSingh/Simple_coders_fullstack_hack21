@@ -2,7 +2,9 @@ const admin = require("../models/admin");
 module.exports = (req, res) => {
   const { aadhar, secret_code } = req.body;
   admin.findOne({ aadhar }, (error, admin) => {
+    console.log("test filler123");
     console.log(admin.secret_code);
+    console.log("test filler");
     console.log(secret_code);
     if (admin) {
       if (admin.secret_code == secret_code) {
