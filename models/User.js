@@ -4,12 +4,18 @@ const Schema = mongoose.Schema
 const person = new Schema({
   aadhar: {
     type: String,
-    required: [true, "Please enter Aadhar"],
+    required: [true, 'Please enter Aadhar'],
     unique: true,
   },
   age: {
-    type : Number,
-    required: [true , "Please enter age"]
+    type: Number,
+    required: [true, 'Please enter age'],
+    validate: [
+      function (age) {
+        return age > 0 && age < 200
+      },
+      'Please Enter valid age',
+    ],
   },
   city: String,
   pwd: {
