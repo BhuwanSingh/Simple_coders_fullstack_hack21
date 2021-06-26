@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const User = require('./../models/User')
 const Center = require('./../models/Center')
+const Vans = require('./../models/vans')
 
 dotenv.config({ path: './config.env' })
 
@@ -22,12 +23,16 @@ const centres = JSON.parse(fs.readFileSync(`${__dirname}/centers.json`, 'utf8'))
 
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf8'))
 
+const vans = JSON.parse(fs.readFileSync(`${__dirname}/vans.json`, 'utf8'))
+
 const inData = async () => {
   try {
     if (process.argv[3] === '--c') {
       await Center.create(centres)
     } else if (process.argv[3] === '--u') {
       await User.create(users)
+    } else if (process.argv[3] === '--v') {
+      await Vans.create(vans)
     }
     console.log('Data Loaded in DB')
   } catch (err) {
@@ -43,6 +48,8 @@ const delData = async () => {
       await Center.deleteMany()
     } else if (process.argv[3] === '--u') {
       await User.deleteMany()
+    } else if (process.argv[3] === '--v') {
+      await Vans.deleteMany()
     }
     console.log('Data deleted in DB')
   } catch (err) {
