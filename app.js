@@ -91,7 +91,7 @@ app.get("/registration", async (req, res) => {
   res.render("registration", { center });
 });
 
-const contact_us = require("./models/contactController");
+const contact_us = require("./controllers/contactController");
 app.get("/contact_us", contact_us);
 
 const van_system = require("./controllers/van_system");
