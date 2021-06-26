@@ -4,10 +4,13 @@ const Schema = mongoose.Schema
 const person = new Schema({
   aadhar: {
     type: String,
-    required: true,
+    required: [true, "Please enter Aadhar"],
     unique: true,
   },
-  age: Number,
+  age: {
+    type : Number,
+    required: [true , "Please enter age"]
+  },
   city: String,
   pwd: {
     type: Boolean,
