@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-background-image: linear-gradient(rgba(0,0,0,0.005),rgba(0,0,0,0.4)),url("https://images.unsplash.com/photo-1589485257513-697766b2358b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHZhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-image: linear-gradient(rgba(0,0,0,0.005),rgba(0,0,0,0.005)),url("https://images.unsplash.com/photo-1496492863660-17de86ce801a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHZhbnxlbnwwfHwwfGJsdWV8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
 background-position: center;
 font-family: sans-serif;
@@ -15,7 +15,22 @@ h1{
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
+th{
+  text-align: center;
+  font-size: 20px;
 
+}
+td{
+  text-align: center;
+  background-color: #A4EBF37F;
+  backdrop-filter: blur(5px);
+}
+#col1{
+  width: 60%;
+}
+#btn_i{
+  left: 2%;
+}
 .search-box {
   margin: auto;
   width: 50%;
@@ -25,26 +40,40 @@ h1{
 .centres {
   overflow-x: auto;
   overflow-y: auto;
-  height: 300px;
+  height: 53%;
   margin: auto;
-  width: 30%;
+  width: 45%;
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 40%;
+  left: 8%;
 }
-
+.vacc{
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+.age{
+  color: red;
+}
 table {
+
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #ddd;
 }
-
+input{
+  width: 300px;
+}
 th {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: #ffffff7f;
+  background: #0A1931;
+  color: white;
   backdrop-filter: blur(5px);
 }
 .map{
@@ -52,5 +81,6 @@ th {
   top: 40%;
   right: 10%;
   height: 40%;
-  
+  width: 35%;
+
   }

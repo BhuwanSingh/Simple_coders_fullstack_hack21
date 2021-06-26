@@ -22,21 +22,23 @@
     <div class="search-box container">
       <form>
         <input
+        id="btn_i"
           type="number"
           name="pin"
           placeholder="Enter Your pin"
           autocomplete
         />
 
-        <button>Search</button>
+        <button id="btn_ish">Search</button>
       </form>
     </div>
     <div class="container">
+      <div class="table">
       <div class="row centres">
         <table>
           <tr>
-            <th>location</th>
-            <th>pin code</th>
+            <th id="col1">Location</th>
+            <th>Pin Code</th>
             <th>26/06/2021</th>
           </tr>
           <% for(var i = 0 ; i < center.length ; i++){ %>
@@ -47,11 +49,21 @@
               ><button id="slot" type="button" name="button">
                 <%= center[i].slots %>
               </button>
-              <%= center[i].age %> <br /><%= center[i].vaccine %></TD
+              <br>
+              <div class="vacc">
+                <%= center[i].vaccine %>
+                <br>
+              </div>
+              <div class="age">
+                <%= center[i].age %>
+                <br>
+              </div>
+              </TD
             >
           </tr>
           <% } %>
         </table>
+      </div>
       </div>
 
       <div class="map row">
