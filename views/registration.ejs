@@ -16,27 +16,34 @@
   <body>
     <div class="header">
       <form>
-        <h1 class="animate__animated animate__bounce">Van system</h1>
+        <h1 class="animate__animated animate__bounce">Registration</h1>
 
         <input
           type="text"
           id="myInput"
           onkeyup="myFunction()"
-          placeholder="Search for names.."
+          placeholder="Search pincodes..."
         />
         <button class="search-btn" type="button">Search by Pin</button>
 
+<<<<<<< HEAD
+        <table class="table-fixed"id="myTable">
+=======
         <table id="myTable" class="table-fixed">
           <% JSON.stringify(center)%>
+>>>>>>> 64da4e6cd371f4405f24aa62f002dc5e7b2771e1
           <thead>
+          <% JSON.stringify(center)%>
+
           <tr class="header2">
             <th style="width: 60%">LOCATION</th>
             <th style="width: 40%">PIN CODE</th>
             <th style="width: 40%">DATE</th>
           </tr>
            </thead>
+            <tbody>
           <% for(var i = 0 ; i < center.length ; i++){ %>
-             <tbody>
+
          <tr>
             <td><%= center[i].name %></td>
             <td><%= center[i].pin %></td>
@@ -46,18 +53,19 @@
             <td><%= center[i].age %></td>
             <td><%= center[i].vaccine %></td>
           </tr>
-           </tbody>
+
           <% } %>
+          </tbody>
         </table>
         <div class="map">
         <iframe
           id="map"
           src="https://www.google.com/maps/d/embed?mid=1Jvw5a0QX8UFMvlZYwUNFpNI-QVWiAddi"
-          width="400"
-          height="400"
+          width="500"
+          height="500"
         ></iframe>
         </div>
-      
+
       </form>
     </div>
   </body>

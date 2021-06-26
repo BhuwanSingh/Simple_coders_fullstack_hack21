@@ -67,21 +67,21 @@ h1{
 }
 #myTable {
     border-collapse: collapse;
-    width: 40%;
+    width: 50%;
     border: 1px solid black;
     font-size: 18px;
     background-color: #F4F9F955;
     backdrop-filter: blur(5px);
-    position: fixed;
+    position: absolute;
     top: 40%;
     left: 10%;
-    
+
   }
 
   #myTable th, #myTable td {
     text-align: left;
     padding: 12px;
-   
+
   }
 
   #myTable tr {
@@ -136,7 +136,12 @@ h1{
 }
 .table-fixed tbody{
   display: block;
+<<<<<<< HEAD
+  height: 450px;
+
+=======
   height: 100px;
+>>>>>>> 64da4e6cd371f4405f24aa62f002dc5e7b2771e1
   overflow-y: auto;
 }
 .table-fixed tr{
@@ -144,9 +149,9 @@ h1{
 }
 
 .map{
-position: fixed;
+position: absolute;
 top: 40%;
-right: 10%;
+right: 5%;
 height: 40%;
 
 }
