@@ -42,12 +42,11 @@
         action="/user/store"
         method="post"
         class="login"
-        onsubmit="return DisplayResults()"
         name="regform"
         autocomplete="off"
       >
         <h1 class="sign">Sign Up</h1>
-        <div id="errormessage"></div>
+        <div id="errormessage"><% console.log(errors) %></div>
         <span class="seperator"></span>
         <div class="input-text">
           <input type="text" name="aadhar" placeholder="Aadhar Card" />
@@ -85,3 +84,6 @@
     </div>
   </body>
 </html>
+
+
+<!-- onsubmit="return DisplayResults()" -->
