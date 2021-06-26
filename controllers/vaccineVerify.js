@@ -8,8 +8,12 @@ module.exports = (req, res) => {
       console.log(user.secret_code);
       if (user.secret_code == secret_code) {
         console.log("this is verified");
-        res.redirect("/adminPage/verified");
+        res.redirect("/adminPage/userverified");
+      } else {
+        res.redirect("/adminPage/usernotverified");
       }
+    } else {
+      res.redirect("/adminPage/usernotverified");
     }
   });
 };

@@ -71,6 +71,12 @@ app.post("/admin_store/login", adminVerifier);
 const adminPage = require("./controllers/adminPage");
 app.get("/adminPage/verified", adminPage);
 
+const adminPagever = require("./controllers/adminPageVer");
+app.get("/adminPage/userverified", adminPagever);
+
+const adminPageNon = require("./controllers/adminPageNon.js");
+app.get("/adminPage/usernotverified", adminPageNon);
+
 const registerController = require("./controllers/sign_upPage.js");
 app.get("/sign_up", registerController);
 
