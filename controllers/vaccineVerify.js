@@ -1,4 +1,4 @@
-const User = require("../models/User")
+const User = require("../models/User");
 
 module.exports = (req, res) => {
   const { aadhar, secret_code } = req.body;
@@ -7,7 +7,8 @@ module.exports = (req, res) => {
       console.log(secret_code);
       console.log(user.secret_code);
       if (user.secret_code == secret_code) {
-        res.redirect("/adminPage/verified" , { messaage : "person is to be Vaccinated"})
+        console.log("this is verified");
+        res.redirect("/adminPage/verified");
       }
     }
   });
