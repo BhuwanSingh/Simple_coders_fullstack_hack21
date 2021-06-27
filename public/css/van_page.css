@@ -32,7 +32,7 @@ html{
 .toploader{
   font-size: 4.5vh;
     position:absolute;
-    top: 18%;
+    top: 0%;
     left: 0%;
     color: #EFEFEF;
 
@@ -114,7 +114,7 @@ h1{
 
   #myTable tr.header, #myTable tr:hover {
 
-    background-color: #F0EBCC;
+    background-color: white;
   }
   #myInput {
     background-image: url('/css/searchicon.png');
