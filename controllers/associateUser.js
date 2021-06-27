@@ -24,5 +24,5 @@ module.exports = async (req, res) => {
     token: num + 1,
   })
 
-  res.render('user_profile', { book })
+  res.render('user_profile', { book , c_token : center.current_token })
 }

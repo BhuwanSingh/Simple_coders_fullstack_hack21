@@ -1,4 +1,5 @@
 const Book = require("../models/book");
+const Center = require("../models/center")
 
 module.exports = async (req, res) => {
   const { aadhar, secret_code } = req.body;
@@ -6,8 +7,10 @@ module.exports = async (req, res) => {
 
   if (book) {
     if (book.secret_code == secret_code) {
+      const center = await Center.findById(book.center_id);
+
       console.log("user logged in");
-      res.render("user_profile", { book });
+      res.render("user_profile", { book , c_token: center.current_token});
     }
   } else {
     // res.redirect("/login");
