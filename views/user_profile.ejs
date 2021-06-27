@@ -12,7 +12,7 @@
     <div class="secretcode">Secret Code</div>
 
     <div class="value"><%= book.secret_code %></div>
-    <div class="livetoken">Reach center in</div>
+    <div class="livetoken">Reach center address in</div>
     <div class="numberCircle" id="timeAllot"></div>
     <div class="yourtoken">Your Token</div>
     <div class="numberCircle2" id="tokenNO"><%= book.token %></book.token></div>
@@ -41,7 +41,7 @@
         hours = (hours < 10) ? "0" + hours : hours;
         minutes = (minutes < 10) ? "0" + minutes : minutes;
 
-        return hours + ":" + minutes;
+        return hours + "h " + minutes + "m";
       }
       console.log(msToTime(time));
       const timeDoc = document.getElementById("timeAllot");
