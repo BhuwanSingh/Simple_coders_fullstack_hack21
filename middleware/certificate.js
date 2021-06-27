@@ -1,6 +1,6 @@
-var http = require('https')
-var fs = require('fs')
-const fun = function(data) {
+var axios = require('axios')
+
+const callAPI = async (data) => {
   var options = {
     method: 'POST',
     hostname: 'us1.pdfgeneratorapi.com',
@@ -11,34 +11,24 @@ const fun = function(data) {
       authorization: process.env.BEARER,
     },
   }
-  let responseUrl = ''
-  var req = http.request(options, function (res) {
-    var chunks = []
 
-    res.on('data', function (chunk) {
-      chunks.push(chunk)
-    })
+  // const data = {
+  //   aadhar: '12423',
+  //   age: 23,
+  //   city: '12434',
+  //   center_name: 'absd',
+  //   center_address: 'sdfdsdf',
+  //   vaccine: 'covishield',
+  //   dose: 2,
+  // }
 
-    res.on('end', function () {
-      var body = Buffer.concat(chunks)
-      responseUrl = body.response
-      // fs.writeFile('myjsonfile.json', body, (err) => {
-      //   if (err) return console.log(err)
-      //   console.log('saved')
-      // })
-    })
-  })
-  req.write(
-    JSON.stringify({
-      aadhar: data.aadhar,
-      age: data.age,
-      city: data.city,
-      center_name: data.center_name,
-      center_address: data.center_address,
-      vaccine: data.vaccine,
-      dose: data.dose,
-    })
+  const all = await axios.post(
+    'https://us1.pdfgeneratorapi.com/api/v3/templates/266018/output?name=temp&format=pdf&output=url',
+    data,
+    { headers: options.headers }
   )
-  return req.end(() => responseUrl)
+
+  return all.data
 }
-module.exports = fun;
+
+module.exports = callAPI
