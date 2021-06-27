@@ -16,6 +16,13 @@ html {
   background-color: white;
 
 }
+.toploader{
+  position:absolute;
+  top: 20%;
+  left: 0%;
+  color: #EFEFEF;
+
+}
 .header {
   height: 110vh;
   background-image: linear-gradient(#E8F0F2,#A2DBFA,#39A2DB);
@@ -80,7 +87,7 @@ h1{
 
   #myTable tr.header, #myTable tr:hover {
 
-    background-color: #F0EBCC;
+    background-color: #EFEFEF;
   }
   #myInput {
     background-image: url('/css/searchicon.png');
