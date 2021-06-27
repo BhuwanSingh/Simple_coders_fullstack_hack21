@@ -18,19 +18,20 @@
     <div class="numberCircle2" id="tokenNO"><%= book.token %></book.token></div>
     <div class="user">
       Hi, <br>
-      Verification Method : <b id="text">Aadhar Card</b><br />
-      Center Name : <b id="text"><%= book.center_name %> </b> <br />
-      Center Address : <b id="text"><%= book.center_address %></b><br />
-      City : <b id="text"><%= book.city %></b><br />
-      Dose Number : <b id="text"><%= book.dose %></b><br />
-      Age : <b id="text"><%= book.age %></b><br />
-      Current Token : <b id="text"><%= c_token %></b><br />
+      Verification Method : <b class='details'>Aadhar Card</b><br />
+      Center Name : <b class='details'><%= book.center_name %> </b> <br />
+      Center Address : <b class='details'><%= book.center_address %></b><br />
+      City : <b class='details'><%= book.city %></b><br />
+      Dose Number : <b class='details'><%= book.dose %></b><br />
+      Age : <b class='details'><%= book.age %></b><br />
+      Current Token : <b class='details' id='current_token'><%= c_token %></b><br />
     </div>
     <div class="certify">
-      <button class="button1" type="button" name="button">Certificate</button>
+      <button id="certificate" class="button1" type="button" name="button" href="<%=cert%>" disabled>Certificate</button>
     </div>
     <script type="text/javascript">
       var token = document.getElementById("tokenNO").innerHTML*1;
+      token -= document.getElementById("current_token").innerHTML*1;
       var time = 32400000+(token-1)*1000*60*5;
 
       function msToTime(duration) {
@@ -44,7 +45,15 @@
       }
       console.log(msToTime(time));
       const timeDoc = document.getElementById("timeAllot");
-      timeDoc.innerHTML = msToTime(time);
+      if(token>0){
+        timeDoc.innerHTML = msToTime(time);
+      } else if(token==0){
+        timeDoc.innerHTML = msToTime(time);
+      } else {
+        document.getElementById('certificate').disabled=false;
+        timeDoc.innerHTML = 'Time passed';
+
+      }
 
     </script>
   </body>
