@@ -12,7 +12,7 @@
     <div class="secretcode">Secret Code</div>
 
     <div class="value"><%= book.secret_code %></div>
-    <div class="livetoken">Time Alloted</div>
+    <div class="livetoken">Reach center in</div>
     <div class="numberCircle" id="timeAllot"></div>
     <div class="yourtoken">Your Token</div>
     <div class="numberCircle2" id="tokenNO"><%= book.token %></book.token></div>
@@ -27,12 +27,12 @@
       Current Token : <b class='details' id='current_token'><%= c_token %></b><br />
     </div>
     <div class="certify">
-      <button id="certificate" class="button1" type="button" name="button" href="<%=cert%>" disabled>Certificate</button>
+      <button id="cer" class="button1" onclick="location.href='<%= cert %>';" name="button" disabled>Certificate</button>
     </div>
     <script type="text/javascript">
       var token = document.getElementById("tokenNO").innerHTML*1;
       token -= document.getElementById("current_token").innerHTML*1;
-      var time = 32400000+(token-1)*1000*60*5;
+      var time = (token-1)*1000*60*5;
 
       function msToTime(duration) {
       var minutes = Math.floor((duration / (1000 * 60)) % 60),
@@ -50,7 +50,7 @@
       } else if(token==0){
         timeDoc.innerHTML = msToTime(time);
       } else {
-        document.getElementById('certificate').disabled=false;
+        document.getElementById('cer').disabled=false;
         timeDoc.innerHTML = 'Time passed';
 
       }

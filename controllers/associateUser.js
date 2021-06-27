@@ -23,6 +23,6 @@ module.exports = async (req, res) => {
     center_address: center.address,
     token: num + 1,
   })
-
-  res.render('user_profile', { book , c_token : center.current_token })
+  var cert = ""
+  res.render('user_profile', { book , c_token : center.current_token , cert})
 }

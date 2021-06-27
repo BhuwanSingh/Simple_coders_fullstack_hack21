@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
   if (book) {
     if (book.secret_code == secret_code) {
       const center = await Center.findById(book.center_id)
-      const cert = await callPI(book)
+      const cert = await callAPI(book)
       console.log('user logged in')
       res.render('user_profile', {
         book,
