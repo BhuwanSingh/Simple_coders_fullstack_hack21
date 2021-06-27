@@ -1,3 +1,7 @@
 module.exports = (req, res) => {
-  res.render('user_profile')
+  if(req.session.userId == undefined ){
+    res.redirect("/")
+  } else {
+    res.render('user_profile')
+  }
 }
