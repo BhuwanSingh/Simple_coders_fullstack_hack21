@@ -1,122 +1,136 @@
 [{
-    "name": "CHIRAYU MEDICAL COLLEGE 18",
-    "address": "Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh",
-    "pin": 462030,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "18+",
-    "paid_free": "free"
-  },{
-    "name": "CHIRAYU MEDICAL COLLEGE 18",
-    "address": "Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh",
-    "pin": 462030,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "45+",
-    "paid_free": "paid"
-  },{
-    "drive": false,
-    "name": "HAJELA HOSPITAL",
-    "address": "Aradhana Nagar, Bhopal, Madhya Pradesh",
-    "pin": 462003,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "45+",
-    "paid_free": "free"
-  },{
-    "name": "HAJELA HOSPITAL",
-    "address": "Aradhana Nagar, Bhopal, Madhya Pradesh",
-    "pin": 462003,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "18+",
-    "paid_free": "paid"
-  },{
-    "name": "LIB. BUILDING ADMIN. BLOCK GMC",
-    "address": "New Libbrary Buillding Administrative Block GMC, Bhopal, Madhya Pradesh",
-    "pin": 462001,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "45+",
-    "paid_free": "paid"
-  },{
-    "name": "ONCOLOGY BLOCK AIIMS COVI",
-    "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
-    "pin": 462020,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "45+",
-    "paid_free": "free"
-  },{
-    "name": "ONCOLOGY BLOCK AIIMS COVI",
-    "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
-    "pin": 462020,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "18+",
-    "paid_free": "free"
-  },{
-    "name": "PEOPLES MEDICALCOLLEGE COVAXIN",
-    "address": "Karond Bypass Rd, Peoples Campus, Bhanpur, Bhopal, Madhya Pradesh 4",
-    "pin": 462037,
-    "slots": 150,
-    "vaccine": "covaxin",
-    "age": "45+",
-    "paid_free": "paid"
-  },{
-    "name": "ONCOLOGY BLOCK AIIMS COVI",
-    "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
-    "pin": 462020,
-    "slots": 150,
-    "vaccine": "covaxin",
-    "age": "45+",
-    "paid_free": "free"
-  },{
-    "name": "SARASWATI SHISU MANDIR SCH CovaX",
-    "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
-    "pin": 462003,
-    "slots": 150,
-    "vaccine": "covaxin",
-    "age": "45+",
-    "paid_free": "free"
-  },{
-    "name": "ONCOLOGY BLOCK AIIMS COVI",
-    "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
-    "pin": 462020,
-    "slots": 150,
-    "vaccine": "covaxin",
-    "age": "18+",
-    "paid_free": "free"
-  },{
-    "name": "SARASWATI SHISU MANDIR SCH COV",
-    "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
-    "pin": 462003,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "18+",
-    "paid_free": "free"
-  },{
-    "name": "PEOPLES MEDICALCOLLEGE COVAXIN",
-    "address": "Karond Bypass Rd, Peoples Campus, Bhanpur, Bhopal, Madhya Pradesh 4",
-    "pin": 462037,
-    "slots": 150,
-    "vaccine": "covaxin",
-    "age": "18+",
-    "paid_free": "paid"
-  },{
-    "name": "SARASWATI SHISU MANDIR SCH COV",
-    "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
-    "pin": 462003,
-    "slots": 150,
-    "vaccine": "covishield",
-    "age": "45+",
-    "paid_free": "free"
-  },{
-    "name": "SARASWATI SHISU MANDIR SCH CovaX",
-    "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
-    "pin": 462003,
-    "slots": 150,
-    "vaccine": "covaxin",
-    "age": "18+",
-    "paid_free": "free"
-  }]
+  
+  "name": "Air Port",
+  "address": " Bhopal, Madhya Pradesh",
+  "pin": 462030,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "70+",
+  "paid_free": "free"
+},{
+  
+  "name": "Amarawat Kalan",
+  "address": "Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh",
+  "pin": 462042,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "70+",
+  "paid_free": "paid"
+},{
+  
+  "name": "Anand Nagar",
+  "address": "Aradhana Nagar, Bhopal, Madhya Pradesh",
+  "pin": 462021,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "70+",
+  "paid_free": "free"
+},{
+  
+  "name": "New Libbrary Buillding Administrative Block GMC",
+  "address": " Bhopal, Madhya Pradesh",
+  "pin": 462001,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "70+",
+  "paid_free": "paid"
+},{
+  
+  "name": "Oncology Block Saket Nagar AIIMS Campus",
+  "address": " Bhopal, Madhya Pradesh",
+  "pin": 462020,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "70+",
+  "paid_free": "free"
+},{
+  
+  "name": "Aradhana Nagar, ",
+  "address": "Bhopal, Madhya Pradesh",
+  "pin": 462003,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "18+",
+  "paid_free": "paid"
+},{
+  
+  "age": "18+",
+  "paid_free": "free",
+  "address": "Bhopal,Madhya Pradesh",
+  "name": "Barkheda Baramad",
+  "pin": 462101,
+  "slots": 150,
+  "vaccine": "covishield"
+},{
+  
+  "name": "PEOPLES MEDICALCOLLEGE COVAXIN",
+  "address": "Karond Bypass Rd, Peoples Campus, Bhanpur, Bhopal, Madhya Pradesh 4",
+  "pin": 462037,
+  "slots": 150,
+  "vaccine": "covaxin",
+  "age": "70+",
+  "paid_free": "paid"
+},{
+  
+  "name": "ONCOLOGY BLOCK AIIMS COVI",
+  "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
+  "pin": 462020,
+  "slots": 150,
+  "vaccine": "covaxin",
+  "age": "70+",
+  "paid_free": "free"
+},{
+  
+  "name": "SARASWATI SHISU MANDIR SCH CovaX",
+  "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
+  "pin": 462003,
+  "slots": 150,
+  "vaccine": "covaxin",
+  "age": "70+",
+  "paid_free": "free"
+},{
+  
+  "name": "ONCOLOGY BLOCK AIIMS COVI",
+  "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
+  "pin": 462020,
+  "slots": 150,
+  "vaccine": "covaxin",
+  "age": "18+",
+  "paid_free": "free"
+},{
+  
+  "name": "SARASWATI SHISU MANDIR SCH COV",
+  "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
+  "pin": 462003,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "18+",
+  "paid_free": "free"
+},{
+  
+  "name": "PEOPLES MEDICALCOLLEGE COVAXIN",
+  "address": "Karond Bypass Rd, Peoples Campus, Bhanpur, Bhopal, Madhya Pradesh 4",
+  "pin": 462037,
+  "slots": 150,
+  "vaccine": "covaxin",
+  "age": "18+",
+  "paid_free": "paid"
+},{
+  
+  "name": "SARASWATI SHISU MANDIR SCH COV",
+  "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
+  "pin": 462003,
+  "slots": 150,
+  "vaccine": "covishield",
+  "age": "70+",
+  "paid_free": "free"
+},{
+  
+  "name": "SARASWATI SHISU MANDIR SCH CovaX",
+  "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
+  "pin": 462003,
+  "slots": 150,
+  "vaccine": "covaxin",
+  "age": "18+",
+  "paid_free": "free"
+}]
