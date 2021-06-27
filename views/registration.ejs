@@ -12,15 +12,23 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/css/registration.css" />
     <title>Registration</title>
   </head>
 
   <body>
     <h1 class="animate__animated animate__bounce">Registration</h1>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for pin..">
-    <button id="btn_ish"class="search-btn" type="button"> Search by Pin</button>
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for pin.."
+    />
+    <button id="btn_ish" class="search-btn" type="button">Search by Pin</button>
 
     <div class="container">
       <div class="table" class="myTable">
@@ -36,35 +44,38 @@
             <tr>
               <td>
                 <b> <%= center[i].name %></b><%if(center[i].drive){%>
-                  <span id="drive">(DriveThrough)</span>
-                  <%}%><br /><%= center[i].address %>
+                <span id="drive">(DriveThrough)</span>
+                <%}%><br /><%= center[i].address %>
               </td>
               <td><%= center[i].pin %></td>
 
-            <TD
-              >
-              <br>
-              <form action="/associateUser" method="post">
-                <button id="slot" type="submit" name="slots" value="<%= center[i]._id%>">
-                <%= center[i].slots %>
-              </button>
-              </form>
-              
-              <div class="vacc">
-                <%= center[i].vaccine %>
-                <br>
-              </div>
-              <div class="age">
-                <%= center[i].age %>
-                <br>
-                <br>
-              </div>
-              </TD
-            >
-          </tr>
-          <% } %>
-        </table>
-      </div>
+              <TD>
+                <br />
+                <form action="/associateUser" method="post">
+                  <button
+                    id="slot"
+                    type="submit"
+                    name="slots"
+                    value="<%= center[i]._id%>"
+                  >
+                    <%= center[i].slots %>
+                  </button>
+                </form>
+
+                <div class="vacc">
+                  <%= center[i].vaccine %>
+                  <br />
+                </div>
+                <div class="age">
+                  <%= center[i].age %>
+                  <br />
+                  <br />
+                </div>
+              </TD>
+            </tr>
+            <% } %>
+          </table>
+        </div>
       </div>
 
       <div class="map row">

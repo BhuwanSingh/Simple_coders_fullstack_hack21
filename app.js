@@ -88,6 +88,9 @@ app.post("/user/store", useradder);
 const associateUser = require("./controllers/associateUser")
 app.post("/associateUser" , associateUser)
 
+const associateVan = require("./controller/associateVan")
+app.post("/associateVan" , associateVan)
+
 // const registration = require("./controllers/registration");
 const Center = require("./models/center");
 const User = require("./models/User");
