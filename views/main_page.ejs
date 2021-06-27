@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/css1.css" />
     <script defer src="js/js1.js"></script>
     <title>Vaccine on the go</title>
@@ -20,14 +24,46 @@
         />
         <p id="para">Vaccine on the go</p>
       </nav>
-      <h1 class="animate_animated animate_bounce" id="heading">Welcome, Get the life saving Vaccine.</h1>
+      <h1 class="animate_animated animate_bounce" id="heading">Welcome , Get the life saving Vaccine.</h1>
       <div class="flex-parent jc-center">
-        <a title="Already have an account"id="btn1" href="/login">Login</a>
+        <a title="Already have an account"id="btn_isha" href="/login">Login</a>
       </div>
 
       <div class="flex-parent jc-center">
         <a title="New User"id="btn2" href="/sign_up">Register Your Shot</a>
       </div>
+      <button id="btn_jain"type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    ❔
+  </button>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Guide</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Hi welcome to our website.
+          If you are a new user , Please click on the <b><i>Register your shot </i></b>Button.
+          <br>
+          If you are an old user and have already registered the vaccine , Please click on the <b> <i>Login</i> </b> Button.
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button id="play-btn"type="button" class="btn btn-secondary" onclick="play()">Play</button>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
       <div class="bubbles">
         <img src="/images/bubble.png" >
         <img src="/images/bubble.png" >
@@ -42,4 +78,14 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    function play(){
+
+      var msg = new SpeechSynthesisUtterance('सुप्रभात. . आपका स्वागत है हमारी वेबसाइट.Vaccine on the go पर |अगर आप नहीं ग्राहक हैं तो please register your shot button dabaye . .Agar aap purane grahak hain toh please login button dabaye');
+      msg.lang = 'hi-IN';
+      window.speechSynthesis.speak(msg);
+
+    }
+  </script>
+
 </html>
