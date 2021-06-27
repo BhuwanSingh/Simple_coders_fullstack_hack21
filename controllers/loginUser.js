@@ -16,6 +16,11 @@ module.exports = async (req, res) => {
         c_token: center.current_token,
         cert: cert.response,
       })
+    } else {
+      res.render('user_login', {
+        errors:
+          "Please enter the Aadhar and secret code you've registered your vaccine with.",
+      })
     }
   } else {
     // res.redirect("/login");
