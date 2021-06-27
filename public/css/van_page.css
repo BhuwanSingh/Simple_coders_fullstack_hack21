@@ -30,11 +30,12 @@ html{
 
 }
 .toploader{
+  font-size: 4.5vh;
     position:absolute;
-    top: 20%;
+    top: 18%;
     left: 0%;
     color: #EFEFEF;
-  
+
   }
 .header {
   height: 110vh;
