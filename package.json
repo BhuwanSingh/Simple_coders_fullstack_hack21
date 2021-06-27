@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/BhuwanSingh/Simple_coders_fullstack_hack21#readme",
     "dependencies": {
+        "axios": "^0.21.1",
         "body-parser": "^1.19.0",
         "connect-flash": "^0.1.1",
         "dotenv": "^10.0.0",

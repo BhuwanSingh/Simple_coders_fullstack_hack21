@@ -13,6 +13,10 @@ const walking = new Schema({
     type: Boolean,
     default: false,
   },
+  current_token: {
+    type: Number,
+    default: 1,
+  },
 })
 
 const Center = mongoose.model('Center', walking)
