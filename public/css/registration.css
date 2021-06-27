@@ -5,7 +5,8 @@ body {
     background-position: center;
     font-family: sans-serif;
   }
- 
+
+
   html{
     font-size: 62.5%;
 }
@@ -30,36 +31,38 @@ h1{
     font-family: 'Times New Roman', Times, serif;
   }
   .secretcode {
-    width: 15%;
-    height: 7.0rem;
+
+    width: 20rem;
+    height: 6.0rem;
     padding: 1.5rem;
     margin-left: 3.0rem;
-  
+
     background: #0a1931;
     border: .2rem solid #232323;
     color: #f9dfdc;
     text-align: center;
-  
-    font: 3.2rem Arial, sans-serif;
-    position: fixed;
+    font-size: 2.4rem;
+
+    font:Arial, sans-serif;
+    position: absolute;
     top: 25%;
     right: 25%;
     border-radius: 2.5rem;
   }
-  
+
   .value {
-    width: 15%;
-    height: 7.0rem;
+    width: 20rem;
+    height: 6.0rem;
     padding: 1.5rem;
-    margin-left: 27%;
-  
+
+
     background: #0a1931;
     border: .2rem solid #232323;
     color: #f9dfdc;
     text-align: center;
-  
-    font: 3.2rem Arial, sans-serif;
-    position: fixed;
+
+    font: 2.5rem Arial, sans-serif;
+    position: absolute;
     top: 25%;
     right: 7%;
     border-radius: 2.5rem;
@@ -82,8 +85,10 @@ h1{
   }
   #myInput {
     width: 30%;
-    margin-left: 8%;
+    margin-left: 7.5%;
     height: 6%;
+    font-size: 2vh;
+    padding-left: 1%;
   }
   #btn_ish {
     margin-left: 2%;
@@ -92,9 +97,14 @@ h1{
     width: 20.0rem;
     border-radius: 2.0rem;
     height: 6%;
+    font-size: 3vh;
   }
-  
+  #btn_ish:hover{
+    background-color: #053742;
+  }
+
   .centres {
+    font-size: 2rem;
     overflow-x: auto;
     overflow-y: auto;
     height: 53%;
@@ -106,7 +116,7 @@ h1{
   }
   .vacc {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
   .age {
@@ -121,7 +131,7 @@ h1{
     border-top: .2rem solid #ddd;
     border-right: .2rem solid #ddd;
   }
-  
+
   th {
     position: sticky;
     position: fix;
@@ -141,7 +151,7 @@ h1{
     height: 59%;
     width: 40%;
   }
-  
+
   #drive {
     font-size: 1.2rem;
     color: red;
