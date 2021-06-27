@@ -188,8 +188,9 @@ body {
     color: #bdc7c9;
   }
   .new-members {
-    margin-bottom: 1.0rem;
-    color: #bdc7c9;
+     font-size: 1.5rem;
+    margin-bottom: 2.0rem;
+    color: #000000;
   }
   .help a {
     text-decoration: none;
@@ -272,3 +273,12 @@ body {
     font-size: 1.6rem;
     color: #bdc7c9;
   }
+ .signup-link{
+    color: #0C4271;
+    text-decoration: none;
+}
+
+.signup-link:hover{
+    text-decoration: underline;
+    color: #185ADB;
+}
