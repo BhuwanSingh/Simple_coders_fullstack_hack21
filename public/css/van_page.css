@@ -6,6 +6,19 @@ html {
     margin: 0;
     padding:0;
 }
+html{
+    font-size: 62.5%;
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+  html{
+      font-size: 45%;
+  }
+}
 #col1{
   width: 60%;
 }
@@ -17,12 +30,12 @@ html {
 
 }
 .toploader{
-  position:absolute;
-  top: 20%;
-  left: 0%;
-  color: #EFEFEF;
-
-}
+    position:absolute;
+    top: 20%;
+    left: 0%;
+    color: #EFEFEF;
+  
+  }
 .header {
   height: 110vh;
   background-image: linear-gradient(#E8F0F2,#A2DBFA,#39A2DB);
@@ -35,23 +48,30 @@ html {
 }
 h1{
     color: #0F3057;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-size: 50px;
+    margin-top: 5rem
+;
+    margin-bottom: 10.0rem
+;
+    font-size: 5.0rem
+;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: .2rem
+;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
 }
 
 .search-btn{
-    margin-left: 20px;
+    margin-left: 2.0rem
+;
     height: 6%;
-    width: 150px;
+    width: 15.0rem
+;
     background: #0A1931;
     border: none;
     color: white;
-    border-radius: 20px;
+    border-radius: 2.0rem
+;
 
 }
 .search-btn:hover{
@@ -62,43 +82,59 @@ h1{
 }
 .form-box{
     background: rgba(0,0,0,1);
-    padding: 30px;
+    padding: 3.0rem
+;
 }
 
 #myTable {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid black;
-    font-size: 18px;
+    border: .1rem
+ solid black;
+    font-size: 1.8rem
+;
     background-color: #F4F9F955;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(.5rem
+);
 
   }
 
   #myTable th, #myTable td {
     text-align: left;
-    padding: 12px;
+    padding: 1.2rem
+;
   }
 
   #myTable tr {
 
-    border-bottom: 1px solid black;
+    border-bottom: .1rem
+ solid black;
   }
 
   #myTable tr.header, #myTable tr:hover {
 
-    background-color: #EFEFEF;
+    background-color: #F0EBCC;
   }
   #myInput {
     background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
+    background-position: 1.0rem
+ 12rem
+;
     background-repeat: no-repeat;
     width: 40%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid black;
-    margin-bottom: 30px;
-    margin-left: 50px;
+    font-size: 1.6rem
+;
+    padding: 1.2rem
+ 2.0rem
+ 1.2rem
+ 4.0rem
+;
+    border: .1rem
+ solid black;
+    margin-bottom: 3.0rem
+;
+    margin-left: 5.0rem
+;
 
   }
   .skip-btn{
@@ -107,18 +143,23 @@ h1{
     padding-bottom: 1%;
     padding-left: 3%;
     position:absolute;
-    left:180px;
+    left:18.0rem
+;
     top:90%;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem
+;
     margin-left: 28%;
     text-decoration: none;
-    height: 28px;
-    width: 300px;
+    height: 2.8rem
+;
+    width: 30.0rem
+;
     background: #0A1931;
     border: none;
     color: white;
-    border-radius: 25px;
+    border-radius: 2.5rem
+;
 
 
 }
@@ -147,7 +188,8 @@ h1{
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
+    border: .1rem
+ solid #ddd;
   }
 
   th {
@@ -157,5 +199,6 @@ h1{
     z-index: 1;
     background: #0A1931;
     color: white;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(.5rem
+);
   }
