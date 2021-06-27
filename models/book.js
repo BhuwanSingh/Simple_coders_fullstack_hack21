@@ -8,6 +8,7 @@ const booking = new Schema({
   pwd: Boolean,
   user_id: Object,
   secret_code: String,
+  vaccine: String,
   dose: {
     type: Number,
     enum: [0, 1, 2],

@@ -22,7 +22,8 @@ module.exports = async (req, res) => {
     center_name: center.name,
     center_address: center.address,
     token: num + 1,
+    vaccine: center.vaccine,
   })
-  var cert = ""
-  res.render('user_profile', { book , c_token : center.current_token , cert})
+  var cert = ''
+  res.render('user_profile', { book, c_token: center.current_token, cert })
 }
