@@ -1,81 +1,62 @@
 [{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682de5"
-  },
+  "drive": true,
+  "name": "DB CITY MALL",
+  "address": "Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh",
+  "pin": 462030,
+  "slots": 196,
+  "vaccine": "covishield",
+  "age": "18+",
+  "paid_free": "free",
+  "current_token": 1
+},{
   "drive": false,
   "name": "CHIRAYU MEDICAL COLLEGE 18",
   "address": "Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh",
   "pin": 462030,
-  "slots": 150,
-  "vaccine": "covishield",
-  "age": "18+",
-  "paid_free": "free"
-},{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682de6"
-  },
-  "drive": false,
-  "name": "CHIRAYU MEDICAL COLLEGE 18",
-  "address": "Bhopal-Indore Highway Bhainsakhedi, Bairagarh, Bhopal, Madhya Pradesh",
-  "pin": 462030,
-  "slots": 150,
+  "slots": 149,
   "vaccine": "covishield",
   "age": "45+",
   "paid_free": "paid"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682de7"
-  },
-  "drive": false,
-  "name": "HAJELA HOSPITAL",
+  "drive": true,
+  "name": "AASHIMA MALL",
   "address": "Aradhana Nagar, Bhopal, Madhya Pradesh",
   "pin": 462003,
-  "slots": 150,
+  "slots": 200,
   "vaccine": "covishield",
   "age": "45+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682de8"
-  },
   "drive": false,
   "name": "HAJELA HOSPITAL",
   "address": "Aradhana Nagar, Bhopal, Madhya Pradesh",
   "pin": 462003,
-  "slots": 150,
+  "slots": 147,
   "vaccine": "covishield",
   "age": "18+",
   "paid_free": "paid"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682de9"
-  },
   "drive": false,
   "name": "LIB. BUILDING ADMIN. BLOCK GMC",
   "address": "New Libbrary Buillding Administrative Block GMC, Bhopal, Madhya Pradesh",
   "pin": 462001,
-  "slots": 150,
+  "slots": 148,
   "vaccine": "covishield",
   "age": "45+",
-  "paid_free": "paid"
+  "paid_free": "paid",
+  "current_token": 1
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682dea"
-  },
-  "drive": false,
-  "name": "ONCOLOGY BLOCK AIIMS COVI",
+  "drive": true,
+  "name": "CAPITAL MALL",
   "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
   "pin": 462020,
-  "slots": 150,
+  "slots": 199,
   "vaccine": "covishield",
   "age": "45+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682deb"
-  },
   "drive": false,
-  "name": "ONCOLOGY BLOCK AIIMS COVI",
+  "name": "ONCOLOGY BLOCK AIIMS ",
   "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
   "pin": 462020,
   "slots": 150,
@@ -83,11 +64,8 @@
   "age": "18+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682dee"
-  },
   "drive": false,
-  "name": "PEOPLES MEDICALCOLLEGE COVAXIN",
+  "name": "PEOPLES MEDICALCOLLEGE ",
   "address": "Karond Bypass Rd, Peoples Campus, Bhanpur, Bhopal, Madhya Pradesh 4",
   "pin": 462037,
   "slots": 150,
@@ -95,11 +73,8 @@
   "age": "45+",
   "paid_free": "paid"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682ded"
-  },
   "drive": false,
-  "name": "ONCOLOGY BLOCK AIIMS COVI",
+  "name": "ONCOLOGY BLOCK AIIMS",
   "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
   "pin": 462020,
   "slots": 150,
@@ -107,11 +82,8 @@
   "age": "45+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682df2"
-  },
   "drive": false,
-  "name": "SARASWATI SHISU MANDIR SCH CovaX",
+  "name": "SARASWATI SHISU MANDIR SCH",
   "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
   "pin": 462003,
   "slots": 150,
@@ -119,23 +91,17 @@
   "age": "45+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682dec"
-  },
   "drive": false,
-  "name": "ONCOLOGY BLOCK AIIMS COVI",
+  "name": "ONCOLOGY BLOCK AIIMS",
   "address": "Oncology Block Saket Nagar AIIMS Campus, Bhopal, Madhya Pradesh",
   "pin": 462020,
-  "slots": 150,
+  "slots": 149,
   "vaccine": "covaxin",
   "age": "18+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682df1"
-  },
   "drive": false,
-  "name": "SARASWATI SHISU MANDIR SCH COV",
+  "name": "SARASWATI SHISU MANDIR SCH ",
   "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
   "pin": 462003,
   "slots": 150,
@@ -143,23 +109,17 @@
   "age": "18+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682def"
-  },
-  "drive": false,
-  "name": "PEOPLES MEDICALCOLLEGE COVAXIN",
+  "drive": true,
+  "name": "PEOPLES MALL",
   "address": "Karond Bypass Rd, Peoples Campus, Bhanpur, Bhopal, Madhya Pradesh 4",
   "pin": 462037,
-  "slots": 150,
+  "slots": 200,
   "vaccine": "covaxin",
   "age": "18+",
   "paid_free": "paid"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682df0"
-  },
   "drive": false,
-  "name": "SARASWATI SHISU MANDIR SCH COV",
+  "name": "SARASWATI SHISU MANDIR SCH",
   "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
   "pin": 462003,
   "slots": 150,
@@ -167,11 +127,8 @@
   "age": "45+",
   "paid_free": "free"
 },{
-  "_id": {
-    "$oid": "60d6e8cb7eefb442bc682df3"
-  },
   "drive": false,
-  "name": "SARASWATI SHISU MANDIR SCH CovaX",
+  "name": "SARASWATI SHISU MANDIR SCH ",
   "address": "Saraswati Shishu Mandir School Shivaji Nagar Bhopal Madhya Pradesh India",
   "pin": 462003,
   "slots": 150,
